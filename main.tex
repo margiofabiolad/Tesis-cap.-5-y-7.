@@ -8,12 +8,16 @@
 \usepackage{mathrsfs}
 \usepackage{parskip} % remove the indent 
 \usepackage{empheq} % close equations with align in a box / for one eq. to use only \boxed
+\usepackage[none]{hyphenat} % for latex does not cut the words 
+
 
 \title{Cosmología. Marco Teórico}
 \author{Margionet Díaz}
 \date{December 2018}
 
 \begin{document}
+
+\sloppy % las corta pero justifica el párrafo 
 
 \maketitle
 
@@ -730,11 +734,31 @@ Podemos suponer que la fuente emite $N(\nu_1)$ fotones con energía $h \nu_1$, e
     Retomando las ec de Friedmann (71) y (72), vamos a estudiar más de cerca esta última, la cual tiene la forma de una ecuación de energía, donde el término de la izquierda se refiere a la energía cinética del fluido que se expande, el primer término a la derecha de la igualdad juega el rol de la energía potencial gravitatoria.
     
     
-    Este par de ecuaciones involucran la Primera Ley de la Termodinámica en su forma relativista. Se sigue
+    Este par de ecuaciones involucran la Primera Ley de la Termodinámica  para un sistema adiabático ($Q=0$). Esto es
     
     \begin{equation}
-        dU = -p DV
+        dU = -p DV.
     \end{equation}
+    
+  La cual debe ser aplicable tanto a fluidos relativistas como no relativistas. La energía interna $U$ es igual a la suma de todas las energías que contribuyen a la energía total, e.g., energía cinética, energía térmica, etc., en un fluido en el marco relativista. Esto es:
+  
+  \begin{equation}
+      \varepsilon_{tot} = \sum_i \varepsilon_i,
+  \end{equation}
+    
+    donde la energía interna se escribe como 
+    
+    \begin{equation}
+        U = \varepsilon_{tot} V,
+    \end{equation}
+    
+    que es la energía contenida en un volumen físico $V$, el cual es reescalado como $a^3$ ($V \propto a^3$). 
+    
+    
+    
+    
+    
+    
     
     
     
