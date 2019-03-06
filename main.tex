@@ -777,5 +777,40 @@ Podemos suponer que la fuente emite $N(\nu_1)$ fotones con energía $h \nu_1$, e
     
     siendo $N = N_0 a^{-3}$. Esta relación representa la {\textit{ecuación para un gas de partículas no relativistas}}. 
     
+    Para un gas monoatómico, la energía cinética viene dada por: $$\varepsilon_{th} = \frac{3}{2} NKT  \hspace{0.3cm} \text{y} \hspace{0.3cm} p = NKT,$$
+    
+    por lo tanto,
+    
+    $$\varepsilon_{tot} = \frac{3}{2} NKT + Nmc^2$$
+    
+    la cual sustituimos en ec. (89)
+    
+    \begin{align}
+        \frac{d}{da} \left( \frac{3}{2} NKT + Nmc^2 \right) + 3 \left( \frac{5/2 NKT + Nmc^2}{a} \right) = 0, \notag \\
+        \notag \\
+        \frac{d(NKT)}{da} + \frac{5NKT}{a}  = 0,
+    \end{align}
+     entonces $NKT = N_0kT_0 a^{-5}$.
+    
+    Continuando con un gas monoatómico, si la energía térmica es $\varepsilon_{th} =  \frac{1}{2}m \langle v^2 \rangle$, con $ \langle v^2 \rangle$ la velocidad cuadrada media de las partículas del gas, se puede encontrar que $ \langle v^2 \rangle \propto a^{-2}$, entonces las velocidades aleatorias del gas decrecen como $v^{-1} \propto^{-1}$, lo cual igualmente se implica a los movimiento aleatorios de las galaxias con respecto al {\textit{flujo de Hubble}}. Esto es lo que se conoce como {\textit{velocidades peculiares}} de galaxias, $v_{pec}$. Significa que, a medida que el Universo se expande las velocidades peculiares decrecen como $v_{pec} \propto a^{-1}$.
+    
+    Regresando a las ecuaciones de Friedmann, 72, si derivamos esta encuación con respecto al tiempo y dividimos por $\dot{a}$, considerando que $\dot{a} = \frac{da}{dt}$ y  $\frac{d\varrho}{da} = - 3 \frac{(\varrho + p/c^2)}{a}$. Así: 
+    
+    \begin{equation}
+        \boxed{\dot{a}^2 =  \frac{8 \pi G \varrho}{3} a^2 - \frac{c^2}{R'^2} + \frac{1}{3} \Lambda a^2,}
+    \end{equation}
+    
+    \begin{equation*}
+        2 \frac{\ddot{a}}{\dot{a}} =  \frac{8 \pi G}{3\dot{a}} \frac{d\varrho}{dt} +  2\frac{8 \pi G \varrho}{3 \dot{a}} \dot{a} + \frac{1}{3} \Lambda a^2,
+    \end{equation*}
+           
+    \begin{equation}
+        \boxed{\frac{\ddot{a}}{\dot{a}} = - \frac{4 \pi G a}{3} \left(\varrho + \frac{3p}{c^2} \right) + \frac{1}{3} \Lambda a^2}.
+    \end{equation}
+         
+    Hemos entonces partiendo de (72) recobrado (71). Así, (71) tiene la forma de una ecuación de fuerza que contiene implicitamente la Primera Ley de la Termodinámica, la cual es posible derivar de la mecánica Newtoniana como ya vimos en (83), solo que el término de presión $p/c^2$ no está contenido en ella. Esta presión puede ser interpretada como una ``corrección'' a la densidad de masa inercial, que es diferente a la fuerza de presión que, e.g., sostiene a las estrellas. 
+    Por otro lado, el término $\varrho + 3p/c^2$ puede leerse como la {\textit{densidad de masa gravitatoria actica}}. 
+        
+    
     
 \end{document}
