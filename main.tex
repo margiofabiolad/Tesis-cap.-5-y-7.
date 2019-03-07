@@ -117,7 +117,7 @@ Ahora, (6) puede ser reescrita como:
     \end{equation}
     
     \vspace{0.6cm}
-    Recordando que $\kappa = 1/R_c$, tres casos deben ser considerados: 
+    Recordando que $\kappa = 1/R_c^2$, tres casos deben ser considerados: 
     
     \begin{equation*}
      \label{eq:aqui-le-mostramos-como-hacerle-la-llave-grande}
@@ -811,6 +811,67 @@ Podemos suponer que la fuente emite $N(\nu_1)$ fotones con energía $h \nu_1$, e
     Hemos entonces partiendo de (72) recobrado (71). Así, (71) tiene la forma de una ecuación de fuerza que contiene implicitamente la Primera Ley de la Termodinámica, la cual es posible derivar de la mecánica Newtoniana como ya vimos en (83), solo que el término de presión $p/c^2$ no está contenido en ella. Esta presión puede ser interpretada como una ``corrección'' a la densidad de masa inercial, que es diferente a la fuerza de presión que, e.g., sostiene a las estrellas. 
     Por otro lado, el término $\varrho + 3p/c^2$ puede leerse como la {\textit{densidad de masa gravitatoria actica}}. 
         
+    
+    Friedmann obtuvo la solución general de (72) para modelos de mundo en expansión (Fridmann A. A., 1922, 1924), donde asumió que la constante cosmológica era diferente de cero ($\Lambda \neq 0$). De esta manera, se le llama {\textit{Modelos de Mundo de Friedmann}} ya que estos son capaces de incluir o no el término $\Lambda$.
+    
+    Friedmann murió en 1925 y nunca supo que los modelos de mundo llevarían su nombre. Cuando George Lema$\hat{i}$tre redescubrió sus soluciones en 1927 logró resaltar las grandes contribuciones de Friendmann y la atención de astrónomos y cosmólogos en 1930 (Lema$\hat{i}$tre, 1927). 
+    
+    
+    \section{Modelos de Mudndo de Friedmann EStándar con $\Lambda = 0$}
+    
+     Cuando en cosmología se habla de {\textit{polvo}} se refiere a un fluido sin presión y por lo tanto $p=0$ en las ecuaciones de Friedmann. Comencemos por estudiar el caso en el que $\Lambda=0$. Por conveniencia, se tomará el valor de la densidad del fluido en la época actual $\varrho_0$ y por conservación de la masa $\varrho=\varrho_0 a^{-3}$. Bajo estas suposiciones, las ecuaciones (71) y (72) se reducen a: 
+    
+    \begin{empheq}[box=\fbox]{align}
+        \ddot{a} & = - \frac{4\pi G \varrho_0  }{3 a^2}, \\
+        \notag \\
+        \dot{a}^2 & = \frac{8\pi G \varrho_0  }{3 a} - \frac{c^2}{R'^2}.
+    \end{empheq}
+    
+    
+    \subsection{Densidad Crítica y Parámetro de Densidad}
+    
+   Por conveniencia, se va a definir una {\textit{densidad crítica $\varrho_c$}} para la densidad de los modelos de mundo. Así:
+   
+   \begin{equation}
+       \varrho_c = \frac{3H_O^2}{8\pi G} = 1.88 \times 10^{-26} \mathrm{h^2 kg m^{-3}},
+   \end{equation}
+    
+    siendo la constante de Hubble $H_0$ con un valor de $100 \, \mathrm{h \, km\, s^{-1} Mpc^{-1}}$. En la época presente, la densidad del modelo $\varrho_0$ puede referirse al valor de la densidad crítica a través de lo que se conoce como {\textit{parámetro de densidad} $\Omega_0 = \varrho_0/\varrho_c$, donde este parámetro ha sido definido como
+    
+     \begin{equation}
+         \Omega_0 = \frac{\varrho_0}{\varrho_c} = \frac{8 \pi G \varrho_0}{3 H_0^2}.
+     \end{equation}
+    
+   Así mismo, el parámetro de densidad bariónico es $\Omega_B$, el de la materia ordinario, o luminosa, $\Omega_{matt}$, a de la materia oscura (DM) como $\Omega_{DM}$. Estos parámetros representan las contribuciones a $\Omega_0$. 
+   
+   De (97) y (98), podemos reescribir las ecs. 95 y 96 como: 
+   
+   \begin{empheq}[box=\fbox]{align}
+        \ddot{a} & = - \frac{\pi G \Omega_0 H_0^2 }{ a^2}, \\
+        \notag \\
+        \dot{a}^2 & = \frac{\pi G \Omega_0 H_0^2  }{a} - \frac{c^2}{R'^2}.
+    \end{empheq}
+    
+    Con respecto a la ecuación de movimiento (100), si establecemos los valores en la época actual, entiéndase $t=t_0$, entonces $a=1$ y $\dot{a} = H_0$, encontramos qué: 
+    
+    \begin{equation}
+       \boxed{ R' = \frac{c/H_0}{(\Omega_0 - 1)^{1/2}},}
+    \end{equation}
+    
+    y recordando de secciones anteriores el radio de curvatura, la ec. 20: $R_c = a R'$, además de la curvatura del espacio $\kappa = R_c^{-2}$, obtenemos:
+    
+    \begin{equation}
+        \boxed{\kappa = \frac{\Omega_0 - 1}{(c/H_0)^2}.}
+    \end{equation}
+    
+    Existe una relación uno a uno entre la densidad del Universo $\Omega_0$ y la curvatura del espacio $\kappa$; uno de los grandes resultados de los Modelos de Mundo de Friedmann cuando la constante cosmológica $\Lambda=0$.
+    
+    
+    
+    
+    
+    
+    
     
     
 \end{document}
