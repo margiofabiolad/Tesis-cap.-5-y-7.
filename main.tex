@@ -19,6 +19,8 @@
 
 \sloppy % las corta pero justifica el párrafo 
 
+\numberwithin{equation}{section}
+
 \maketitle
 
 \section{Principio Cosmológico}
@@ -606,7 +608,7 @@ Podemos suponer que la fuente emite $N(\nu_1)$ fotones con energía $h \nu_1$, e
 
 
        
-       donde  $R_{\mu \nu }$ es el {\textit{tensor de Ricci}}, $R$ el {\textit{escalar de Ricci o curvatura escalar}}, $G$ la constante de Gravitación Universal, $c$ la velocidad de la luz y $\Lambda$ la famosa {\textit{constante cosmológica}}, introducida por Einstein en 1917 con la intención de crear un Universo estático con geometría cerrada y que permitiera la incorporación del {\textit{Principio de Mach}} a la relatividad general (Einstein, 1917). Ernest Mach fue uno de los más influyentes críticos de los concetos de espacio y tiempo absoluto Newtonianos, lo cual publicó luego en su {\textit{``Mechanics''}} y el cual Einstein luego llamó Principio de Mach (Lichtenegger H., 2008; Das S., 2015). 
+       donde  $R_{\mu \nu }$ es el {\textit{tensor de Ricci}}, $R$ el {\textit{escalar de Ricci o curvatura escalar}}, $G$ la constante de Gravitación Universal, $c$ la velocidad de la luz y $\Lambda$ la famosa {\textit{constante cosmológica}}, introducida por Einstein en 1917 con la intención de crear un Universo estático con geometría cerrada y que permitiera la incorporación del {\textit{Principio de Mach}} a la relatividad general (Einstein, 1917). Ernest Mach fue uno de los más influyentes críticos de los conceptos de espacio y tiempo absolutos Newtonianos. Este principio establecía que todas las fuerzas inerciales son debido a las distribuciones de materia en el Universo, el cual publicó luego en su {\textit{``Mechanics''}} y posteriormente Einstein llamó Principio de Mach (Harrison E., "The Science of the Universe", pp: 236 - 239; Lichtenegger H., 2008; Das S., 2015). 
        
        
    \end{itemize}
@@ -865,13 +867,107 @@ Podemos suponer que la fuente emite $N(\nu_1)$ fotones con energía $h \nu_1$, e
     \end{equation}
     
     Existe una relación uno a uno entre la densidad del Universo $\Omega_0$ y la curvatura del espacio $\kappa$; uno de los grandes resultados de los Modelos de Mundo de Friedmann cuando la constante cosmológica $\Lambda=0$.
+
+      \subsection{Dinámica de los Modelos de Friedmann con $\Lambda = 0$}  
+    
+    En lo que sigue, es importante entender lo que las soluciones (99) y (100) implican. De sustituir (101) en (100) obtenemos la expresión: 
+    
+    \begin{equation*}
+       \dot{a}^2 = \frac{\pi G \Omega_0 H_0^2  }{a} - \frac{c^2 (\Omega_0 - 1)}{c^2/H_0^2}, 
+    \end{equation*}
+    
+    \begin{equation}
+       \boxed{\dot{a}^2 = H_o^2 \left[ \Omega_0 \left( \frac{1}{a} - 1 \right) + 1 \right].}
+    \end{equation}
+    
+    En el caso de $a >> 1$, $\dot{a}^2$ se escribe como
+    
+    \begin{equation}
+        \boxed{ \dot{a}^2  = H_o^2 (1- \Omega_0).}
+    \end{equation}
+    
+    Y de esta últiam ecuación, se desprende tres casos. 
+    
+    \begin{itemize}
+        \item[i.] Modelos con un parámetro de densidad $\Omega_0 < 1$, los cuales tienen una geometría hiperbólica abierta y se expanden a $a=\infty$. Donde 
+        $$\dot{a}  = H_o (1- \Omega_0)^{1/2}.$$
+        
+        \item[ii.] También, modelos con un parámetro $\Omega_0 >1$. Aquellos con geometría esférica cerrada. Dejan de expandirse en algún valor finito de $a$, entonces $a=a_{max}$ (en el infinito tienen ``tasas de expansión imaginarias''), el cual alcanzan en un tiempo máximo 
+        $$t_{max} = \frac{\pi \Omega_0}{2 H_0 (\Omega_0 - 1)^{3/2}}.$$
+        
+        \item[iii.] Por último, tenemos el caso cuando el parámetro de densidad $\Omega_0 = 1$, cuyo modelo tiene una velocidad de expansión que tiende a cero cuando $a \rightarrow{\infty}$. 
+    Se conoce como {\textit{Modelo Einstein- de Sitter}} o {\textit{modelo crítico}}. Plantea un Universo que no colapsa ni tampoco se expande por siempre. 
+
+    El valor del factor de escala varía con el tiempo cósmico como:
+
+    \begin{equation}
+    a(t) ) \left( \frac{t}{t_0} \right)^{2/3},
+    \end{equation} 
+
+    donde $\kappa = 0$ y en la época presente $$t_0 = (2/3) H_0^{2/3}$$.
+    
+    \end{itemize}
+
+ 
     
     
+    \begin{wrapfigure}{r}{0.5\linewidth}               \includegraphics[width=0.65\textwidth]{grafica_scale_factor_timepp219Malcolm.png}
+        \caption{}%\small{$\Omega = \varrho_0/\varrho_c$. Para  $\Omega_0 > 1$, el Universo colapsa a $a=0$. %Para $\Omega_0 <1$, el Universo se expande hasta el infinito y la velocidad de expansión es infinita como $a \rightarrow{\infty}$ . Por último, $\Omega_=1$. Para el del tiempo, este viene en términos del tiempo adimensional $H_0 t$. Siendo $t_0$ es el tiempo actual, cuando $\Omega_0 = 0$, $H_0 t_0=1$; $\Omega_0 = 1$, $ H_0 t_0 = 2/3$ y para $\Omega_0 = 2$, $H_0 t_0 = 0.57$. Las tres curvas tienen la misma pendiente $1$ para $a(1)$.}}
+    \end{wrapfigure}
     
     
+       En la figura 4 se muestran algunas soluciones a la ec. 7.21. Este gráfico muestra la relación entre la dinámica y geometría de los modelos de Friedmann sin constante cosmológica. El eje $x$ viene en unidades de $H_0^{-1}$. Nótese la línea de la presente época $a=1$.  Las pendientes en ese punto son siempre $1$. Así mismo, la edad actual del Universo para cada parámetro es dada por la intersección de cada curva con la línea en $a=1$. 
+    
+
+    
+    Este último caso, es un modelo de mundo vacío, o también se le conoce como {\textit{Modelo de Milne}} donde $a(t) = H_0 t$ y $\kappa = - (H_0/c)^2$. 
     
     
+    \newpage
     
+    Milne creía que la noción de que la gravedad deforma el espacio es creíble pero consideraba que esto no daba explicación acerca de su naturaleza. Que la materia y la gravedad estén enlazadas partiendo de la teoría de la Relatividad era algo de lo que dudó. Así, él construyó sus propia teoría coonocida como {\textit{relatividad cinemática}}, donde la gravedad no es un elemento principal. Basado en el principio cosmológico y la relatividad especial Milne crea una visión que explica la naturaleza de la gravedad y otras leyes físicas. 
+    Su Universo consiste de una nube esférica de partículas (galaxias) las cuales se expenden dentro de un espacio plano, que es infinito y por lo tanto vacío. Bajo ideas de la relatividad especial, la expansión del Universo inicia en un punto del espacio: las partículas colisionan en todas las direcciones con velocidades que van desde cero hasta velocidades muy cercanas a la de la luz. También, el borde del Universo se expande a velocidades cercanas a las de la luz. Alrededor de cada una de las partículas, la distribución y velocidades de recesión de las otras partículas es isotrópica en el marco de referencia de esa partícula. En este Universo, la mayoría de las partículas se hallan agrupadas en los bordes de la nube (ver figura 5). Refiriéndose a esta idea como la relatividad cinemática, las partículas se mueven libremente sin ser afectadas por ninguna fuerza de modo que cada partícula tiene un comportamiento que simula el efecto de la gravedad. 
+    Ya que hay un número infinito de galaxias, o partículas, este Universo tiene una masa también infinita. Su Univers finito y con borde, a través de cambios en los intervalos de espacio y tiempo, puede ser transformado en un Universo infinito y sin límites, el cual obedece la métrica de Robertson – Walker, ec. (21), y donde se expande el espacio, es homogéneo, isotrópico y con curvatura negativa, gemetría global hiperbólica, y está uniformemente poblado de galaxias. Esto es así ya que todas las galaxias que participan en la expansión no están desaceleradas y cualquiera en particular tiene la misma velocidad con respecto a un mismo observador fundamental. También, los tiempos cósmicos medidos en diferentes marcos de referencia están relacionados por las transformación de Lorentz estándar $t’ = \gamma(t – rv/c^2)$, siendo $\gamma = (1-v^2/c^2)^{-1/2}$. Las condiciones de isotropía y homogeneidad se aplican en el tiempo cósmico constante $t’$ en los marcos de referencia de todos los observadores fundamentales. 
+    
+    \newpage
+
+
+   \begin{wrapfigure}{r}{0.5\linewidth}                  \includegraphics[width=0.65\textwidth]{milne_model.png}
+        \caption{\footnotesize{El universo acotado de Milne se expande en el espacio.}}
+    \end{wrapfigure}
+
+ 
+Estas transformaciones de espacio y tiempo hace que las galaxias sean estacionarias en un espacio en expansión, y el Big Bang ya no existe como un punto en el espacio. Visto desde el punto de vista de la relatividad general, con la constante cosmológica cero y ya que Milne prescinde de la gravedad, entonces $G =0$, 
+
+         \vspace{4cm}
+
+
+    Las soluciones de (4.9) pueden ser escritas como: 
+    
+ 
+    
+   \begin{itemize}
+
+     \item $\Omega > 1$: 
+
+        \begin{align}
+	        a & =A (1 - \cos \theta) \hspace{0.4cm}  & t  = B(\theta - \sin \theta), \\
+	        A & = \frac{\Omega_0}{2(\Omega_0 -1 )} \hspace{0.4cm} & B  = \frac{\Omega_0}{2H_0( \Omega_0 - 1)^{3/2}}
+        \end{align} 
+    
+ \item $\Omega_0 <1$:
+
+\begin{align}
+	a & =A (\cosh \phi - 1) \hspace{0.4cm} &t = B(\sinh \phi - \phi ), \\
+	A & = \frac{\Omega_0}{2(1 - \Omega_0 )} \hspace{0.4cm} & B= \frac{\Omega_0}{2H_0(1 - \Omega_0)^{3/2}}.
+\end{align} 
+
+    \end{itemize} 
+
+    Al final, todos los modelos van a tender a la dinámica del modelo crítico 
+    
+    
+\subsection{Modelos de Friedmann con Constante Cosmológica}
     
     
 \end{document}
