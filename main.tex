@@ -1,4 +1,6 @@
 \documentclass[11pt]{article}
+
+\usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath, amsthm, amssymb}
 \usepackage{graphicx} % fugures
@@ -11,6 +13,7 @@
 \usepackage[none]{hyphenat} % for latex does not cut the words 
 
 
+
 \title{Cosmología. Marco Teórico}
 \author{Margionet Díaz}
 \date{December 2018}
@@ -19,7 +22,7 @@
 
 \sloppy % las corta pero justifica el párrafo 
 
-\numberwithin{equation}{section}
+\numberwithin{equation}{section} % enurate equations by section 
 
 \maketitle
 
@@ -617,7 +620,7 @@ Podemos suponer que la fuente emite $N(\nu_1)$ fotones con energía $h \nu_1$, e
    
     \subsubsection{Ecuaciones de Friedmann}
     
-    La isotropía y homogeneidad del Universo implicaron grandes simplificaciones a las ecuaciones de campo de Einstein, ecs. 69 y 70, reduciéndose entonces a este par de ecuaciones: 
+    La isotropía y homogeneidad del Universo implicaron grandes simplificaciones a las ecuaciones de campo de Einstein, ecs. 3.2 y 3.3, reduciéndose entonces a este par de ecuaciones: 
     
     \begin{empheq}[box=\fbox]{align}
         \ddot{a} = - \frac{4 \pi G}{3} a \left( \varrho + \frac{3p}{c^2} \right) + \frac{1}{3} \Lambda a, \\
@@ -932,35 +935,36 @@ Podemos suponer que la fuente emite $N(\nu_1)$ fotones con energía $h \nu_1$, e
     \newpage
 
 
-   \begin{wrapfigure}{r}{0.5\linewidth}                  \includegraphics[width=0.65\textwidth]{milne_model.png}
+   \begin{wrapfigure}[10]{r}{0.5\linewidth}                  \includegraphics[width=0.65\textwidth]{milne_model.png}
         \caption{\footnotesize{El universo acotado de Milne se expande en el espacio.}}
     \end{wrapfigure}
 
  
 Estas transformaciones de espacio y tiempo hace que las galaxias sean estacionarias en un espacio en expansión, y el Big Bang ya no existe como un punto en el espacio. Visto desde el punto de vista de la relatividad general, con la constante cosmológica cero y ya que Milne prescinde de la gravedad, entonces $G =0$, 
 
-         \vspace{4cm}
+         \vspace{5cm}
 
 
     Las soluciones de (4.9) pueden ser escritas como: 
     
  
+
     
    \begin{itemize}
 
      \item $\Omega > 1$: 
 
         \begin{align}
-	        a & =A (1 - \cos \theta) \hspace{0.4cm}  & t  = B(\theta - \sin \theta), \\
-	        A & = \frac{\Omega_0}{2(\Omega_0 -1 )} \hspace{0.4cm} & B  = \frac{\Omega_0}{2H_0( \Omega_0 - 1)^{3/2}}
-        \end{align} 
-    
- \item $\Omega_0 <1$:
+            a & =A (1 - \cos \theta) \hspace{0.4cm} & t  = B(\theta - \sin \theta), \\
+             A & = \frac{\Omega_0}{2(\Omega_0 -1 )} \hspace{0.4cm} & B  = \frac{\Omega_0}{2H_0( \Omega_0 - 1)^{3/2}}
+        \end{align}
+        
+    \item $\Omega_0 <1$:
 
-\begin{align}
-	a & =A (\cosh \phi - 1) \hspace{0.4cm} &t = B(\sinh \phi - \phi ), \\
-	A & = \frac{\Omega_0}{2(1 - \Omega_0 )} \hspace{0.4cm} & B= \frac{\Omega_0}{2H_0(1 - \Omega_0)^{3/2}}.
-\end{align} 
+        \begin{align}
+	        a & =A (\cosh \phi - 1) \hspace{0.4cm} &t = B(\sinh \phi - \phi ), \\
+	        A & = \frac{\Omega_0}{2(1 - \Omega_0 )} \hspace{0.4cm} & B= \frac{\Omega_0}{2H_0(1 - \Omega_0)^{3/2}}.
+        \end{align}
 
     \end{itemize} 
 
@@ -968,6 +972,150 @@ Estas transformaciones de espacio y tiempo hace que las galaxias sean estacionar
     
     
 \subsection{Modelos de Friedmann con Constante Cosmológica}
+
+    Einstein asumía que la estructura a gran escala del Universo era estática, entonces introdujo, de manera más bien [\textit{ad hoc}} la constante cosmológica para reconciliar esta visión con su teoría de la relatividad general pero nunca imaginó la importancia de su controversial constante cosmológica. $\Lambda$ aparecía en sus ecuaciones de campos como una constante. McVittie (1956) y otros, consideraban que $\Lambda$ era una constante de integración. McVittie enfatiza que, como una constancia de integración, $\Lambda$ no puede tener cualquier valor (McVittie, 1959, p. 35) (McVittie, G. C., 1956, General Relativity and Cosmology (Chapman and Hall, London).)  Más tarde, en 1933, Lema\^itre sugiere que $\Lambda$ puede ser interpretada como una densidad de energía de vacío (Lema\^itre, 1933), interpretación bastante acertada con respecto a la cosmología moderna, conocida como la {\textit{energía oscura}}, un problema todavía no resuelto. 
+
+    \subsubsection{Constante Cosmológica y la Densidad de Energía del Vacío}
+    
+    Recordando que las 3.4 y 3.5 
+    
+    \begin{empheq}[box=\fbox]{align}
+        \ddot{a} = - \frac{4 \pi G}{3} a \left( \varrho + \frac{3p}{c^2} \right) + \frac{1}{3} \Lambda a, \\
+         \notag \notag \\ 
+        \dot{a}^2 =  \frac{8 \pi G \varrho}{3} a^2 - \frac{c^2}{R'^2} + \frac{1}{3} \Lambda a^2 \notag, 
+    \end{empheq}
+    
+    son las ecuaciones de campo de Einstein que incluyen la $\Lambda$. Para Universos llenos de polvo, $3p/c^2=0$, por lo que ahora 3.4  se simplifica a 
+    
+    
+    \begin{equation}
+         \ddot{a} = - \frac{4 \pi G a \varrho  }{3}+ \frac{1}{3} \Lambda a =- \frac{4 \pi G\varrho_0 }{3a^2}+ \frac{1}{3} \Lambda a. 
+    \end{equation}
+    
+    La expresión 4.14 nos dice que, así se considere un Universo vacío donde $\varrho=0$, hay una fuerza neta que actúa sobre una partícula de prueba. Para el caso en que $\Lambda$ sea positiva, puede ser interpretada como una especie de ``fuerza repulsiva'', asumida opuesta a la gravedad, de un vacío (Zeldovich, 1968) Desde el punto de vista de la física clásica no existe una explicación obvia para este término. 
+    
+    Desde el punto de vista de la teoría cuántica de campos, se introdujo el campo de Higgs en la teoría de interacciones débiles del modelo estándar para eliminar singularidades en la teoría y para dotar de masa a los bosones $W^{\pm}$ y $Z^0$,  (Zeldovich, 1986).  Zeldovich establece que los campos de Higgs tienen la propiedad de ser campos escalares, donde las ecuaciones de estado tienen presiones negativas $p=- \varrho c^2$, y que son diferentes de los campos vectoriales del electromagnetismo o los campos tensoriales de relatividad general. 
+    
+    El tensor energía - momento de un vacío tiene una ecuación de estado de presión negativa $p=- \varrho c^2$, donde $p$ puede ser interpretada como una ``tensión'' más que una presión. Cuando el vacío se expande, el trabajo hecho $p dV$  al expandirse de $V$ a $V + dV$ es $- \varrho c^2 dV$ de modo que, durante la expansión, la densidad de masa - energía del campo de presión negativa permanece constante. Este resultado puede ser igualmente obtenido si se cosidera $\varrho$ constante en (3.23). 
+    
+    Desde el punto de vista de la teoría cuántica de campos, se puede hacer un análisis para estimar la densidad de energía de los campos vacíos. La energía de punto cero de campos constribuye con la densidad de la energía oscura. La suma sobre las energías de modo de punto cero debe ser limitada a una frecuencia alta (o distancia corta) hasta la cual el modelo físico tenga sentido. Así, la integral de la energía de punto cero ($k/2$) de modos normales (de número de onda $k$) de un campo escalar bosónico sin masa ($\Phi$) hasta un número de onda máximo $k_{max}$ en la que la teoría se rompe, da la densidad de energía del vacío 
+    
+  \begin{equation}
+       \varrho_{vac} = \int_0^{k_{max}}{\frac{4\pi k^2 dk }{(2\pi)^3} \frac{k}{2}}.
+  \end{equation}
+  
+  Tomando el límite
+    
+   \begin{equation}
+       \varrho_{vac} = \lim_{L \to \infty}{\frac{E_0}{L^3}} = \hbar \frac{k^4_{max}}{16 \pi^2}.
+   \end{equation}
+    
+    
+    Carroll, Press y Turner (Carroll, et al., 1992), en su enfoque, toman la energía a la cual teoría de campos se rompe debido a efectos gravitatorios cuánticos que toman lugar en la escala de energía de Planck $E*\sqrt{\hbar c^5/G}  \approx 10^{19} \mathrm{GeV}$, de manera que si
+    $$k_{max} = \frac{E*}{\hbar},$$
+    
+    \begin{equation}
+        \varrho_{vac} \approx 10^{95} \mathrm{kg m^{-3}}.
+    \end{equation}
+    
+    
+    Desde un punto de vista similar, Peacock (Peacock, 2000) , consierando el Principio de Incertidumbre de Heisenberg, el cual estable que una par de partículas virtuales de masa $m$ pueden existir para un tiempo $t \sim \hbar mc^2$ que corresponde a una separación máxima de $x \sim \hbar/mc$. De esta manera, la densidad típica de campos de vacío 
+
+    \begin{equation}
+	    \varrho \sim \frac{m}{x^3} \approx \frac{c^3m^4}{\hbar^3}.
+    \end{equation}
+    
+    Debido a que la densidad de masa en campos vacíos es invariable con el tiempo cósmico, entonces adoptando la masa de Planck $m = m_P = \sqrt{hc/G} = 5.4 \times 10^{-8} \, \mathrm{kg} = 3 \times 10^{19} \, \mathrm{GeV}$, la densidad de masa obtenida es
+
+    \begin{equation}
+        \varrho_{vac} = \sim 10^{97} \, \mathrm{kg m^{-3}}
+    \end{equation} 
+    
+    Actualmente, hay evidencia convincente de que $\Lambda$ tiene un valor finito con una densidad de masa 
+    \begin{equation}
+        \varrho_v \approx 6 \times 10^{-27} \mathrm{kg \, m^{-3}},
+    \end{equation} 
+
+    alrededor de unas $10^{120}$ veces menos que el valor predicho, diferencia que genera un gran problema en la física. El detalle acá es explicar cómo puede este valor variar tan bruscamente. 
+    
+    Con el desarrollo de la idea del rompimiento de simetría en el modelo estándar de partículas, se planteó una relación de la expansión y enfriamiento del Universo con una secuencia de transiciones de fase que acompañan al rompimiento de simetría. Cada transición de fase de primer orden tiene un calor que parece como una contribución a una constante cosmológica dependiente del tiempo $\Lambda(t)$ o densidad de energía oscura. La disminución del valor de esta densidad de energía oscura en cada transición de fase es mayor que un valor presente. Una posible respuesta es que la energía oscura ahora es despreciada, lo cual parece descabellado pero condujo al escenario de la inflación que tomó lugar en el Universo muy temprano ($\sim 10^{-36} - 10^{-33} s$). Desde esta visión, este es exactamente el tipo de campo que condujo la expansión inflacionaria. Se debe encontrar una explicación al hecho de que $\varrho_v$ decrece por un factor $10^{120}$ al final de la era inflacionaria. U valor de $10^{-120}$ es un valor tan pequeño que, como se mencionó arriba, podría considerarse que $\Lambda=0$ en el modelo de Friedmann. 
+
+   Es posible asociar la ``repulsión del vacío' de Zeldovich con una densidad de masa $\varrho_v$ y con la densidad de energía del vacío o la energía oscura en la presente época. Consideremos entonces un parámetro de densidad relacionada con la energía oscura $\Omega_{\Lambda}$. Reescribimos 4.16 como:
+   
+   \begin{align}
+         \ddot{a} & = - \frac{4 \pi Ga}{3}  \left( \varrho + \frac{3p}{c^2} \right) + \frac{1}{3} \Lambda a, \\
+          \ddot{a} & = - \frac{4 \pi Ga}{3}  \left( \varrho_m + \varrho_v + \frac{3p_v}{c^2} \right),
+   \end{align}
+       
+    donde estamos considerando la densidad de `polvo'$\varrho_{m}$, y consideramos la densidad del vacío $\varrho_v$ y la presión $p_v$. Siendo ahora $p_v = - \varrho_vc^2$, se sigue
+    
+    \begin{equation}
+        \ddot{a} = - \frac{4 \pi G a}{3}  \left( \varrho_m -2\varrho_v \right).
+    \end{equation}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
 \end{document}
