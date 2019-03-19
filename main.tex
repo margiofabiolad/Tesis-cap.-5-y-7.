@@ -852,9 +852,9 @@ Podemos suponer que la fuente emite $N(\nu_1)$ fotones con energía $h \nu_1$, e
    De (97) y (98), podemos reescribir las ecs. 95 y 96 como: 
    
    \begin{empheq}[box=\fbox]{align}
-        \ddot{a} & = - \frac{\pi G \Omega_0 H_0^2 }{ a^2}, \\
+        \ddot{a} & = - \frac{\Omega_0 H_0^2 }{ 2a^2}, \\
         \notag \\
-        \dot{a}^2 & = \frac{\pi G \Omega_0 H_0^2  }{a} - \frac{c^2}{R'^2}.
+        \dot{a}^2 & = \frac{\Omega_0 H_0^2  }{a} - \frac{c^2}{R'^2}.
     \end{empheq}
     
     Con respecto a la ecuación de movimiento (100), si establecemos los valores en la época actual, entiéndase $t=t_0$, entonces $a=1$ y $\dot{a} = H_0$, encontramos qué: 
@@ -981,8 +981,8 @@ Estas transformaciones de espacio y tiempo hace que las galaxias sean estacionar
     
     \begin{empheq}[box=\fbox]{align}
         \ddot{a} = - \frac{4 \pi G}{3} a \left( \varrho + \frac{3p}{c^2} \right) + \frac{1}{3} \Lambda a, \\
-         \notag \notag \\ 
-        \dot{a}^2 =  \frac{8 \pi G \varrho}{3} a^2 - \frac{c^2}{R'^2} + \frac{1}{3} \Lambda a^2 \notag, 
+         \notag \\ 
+        \dot{a}^2 =  \frac{8 \pi G \varrho}{3} a^2 - \frac{c^2}{R'^2} + \frac{1}{3} \Lambda a^2, 
     \end{empheq}
     
     son las ecuaciones de campo de Einstein que incluyen la $\Lambda$. Para Universos llenos de polvo, $3p/c^2=0$, por lo que ahora 3.4  se simplifica a 
@@ -1053,26 +1053,91 @@ Estas transformaciones de espacio y tiempo hace que las galaxias sean estacionar
         \ddot{a} = - \frac{4 \pi G a}{3}  \left( \varrho_m -2\varrho_v \right).
     \end{equation}
     
+    En este caso, $\varrho_m = \varrho_0/a^3$, mientras $\varrho_v = cte$.Y sustituyendo
+    
+    \begin{equation}
+         \ddot{a} = - \frac{4 \pi G \varrho_0}{3 a^2} + \frac{8 \pi G \varrho_v a}{3}.
+    \end{equation}
+    
+    Haciendo una revisión a la relación 4.16,
+    
+    \begin{equation*}
+         \ddot{a} = - \frac{4 \pi G a \varrho  }{3}+ \frac{1}{3} \Lambda a =- \frac{4 \pi G\varrho_0 }{3a^2}+ \frac{1}{3} \Lambda a. 
+    \end{equation*}
+    
+    la cual tiene la misma forma de 4.26, se puede identificar el término $\Lambda$
+    
+    \begin{equation}
+        \Lambda = 8\pi G\varrho_v.
+    \end{equation}
+    
+    Si nos referimos a la época actual, $a=1$, se tiene 
     
     
+    \begin{equation}
+         \ddot{a} = - \frac{4 \pi G \varrho_0}{3} + \frac{8 \pi G \varrho_v }{3}.
+    \end{equation}
+    
+    De la misma manera que se determinó $\Omega_0$ (ec. 4.4), nosotros podemos asociar un parámetro a la densidad del vacío y la constante cosmológica. Así:
+    
+    \begin{equation}
+         \Omega_{\Lambda} = \frac{\varrho_v}{\varrho_c} = \frac{8 \pi G \varrho_v}{3 H_0^2}.
+     \end{equation}
+    
+    De manera que, sustituyendo el término $\varrho_v$ en 4.27, 
+    
+    \begin{equation}
+        \Lambda = 3 H_0^2 \Omega_{\Lambda}.
+    \end{equation}
+    
+    Y así podemos repetir toda la deducción anterior hecha para el caso sin costante cosmológica. Sustituyendo en las ecuaciones de movimiento, 4.16 y 4.17 el valor de $\Lambda$ y $\varrho_0$,
+    
+   
+       \begin{empheq}[box=\fbox]{align}
+            \ddot{a} & = - \frac{\Omega_0 H_0^2 }{ 2a^2} +  H_0^2 \Omega_{\Lambda} a, \\
+            \notag \\
+            \dot{a}^2 & = \frac{\Omega_0 H_0^2  }{a} - \frac{c^2}{R'^2} + 3 H_0^2 \Omega_{\Lambda} a^2.
+        \end{empheq}
+         
+    A continuación, se sustityen los valores de $a$ y $\dot{a}$ en 4.34 para la época actual, obteniéndose
+    
+    \begin{align}
+        H_0^2 & = \Omega_0 H_0^2  - \frac{c^2}{R'^2} +  H_0^2 \Omega_{\Lambda}, \notag \\
+        \frac{c^2}{R'^2} & = H_0^2 [(\Omega_0 + \Omega_{\Lambda}) - 1] \hspace{1cm} \text{o} \\
+        \kappa & = \frac{1}{R'^2} = \frac{[(\Omega_0 + \Omega_{\Lambda})]}{C^2/H_0^2}.
+    \end{align}
+        
+   De aquí, la condición de que las secciones espaciales son espacios planos Euclideos se escribe 
+   
+   $$(\Omega_0 + \Omega_{\Lambda}) = 1.$$
+   
+   Recordando que el radio de curvatura $R_c$ cambia con el factor de escala, $R_c=aR'$, si la curvatura del espacio es cero en este momento, también debió serlo en todos los tiempos del pasado. 
     
     
+    %%\subsection{Variando la Ecuación de Estado de la Energía del Vacío }
     
+    \subsection{Consideraciones Generales de la Dinámica de Modelos de Mundo con $\Lambda \neq 0$. }
     
+    La importancia de estos modelos es que ayudan a determinar y mejoras valores de los parámetros cosmológicos. Algunas consideraciones son: 
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    \begin{itemize}
+        \item $\Lambda < 0$: 
+        
+            En estos modelos existe una fuerza adicional a la gravedad la cual ralentiza la expansión del Universo. Si revisamos la relación (4.18), podemos extraer que independientemente de cuán pequeños sean los valores de $\Omega_{\Lambda}$ y  $\Omega_{0}$ , la expansión del Universo se va a revertir. 
+        
+        \item $\Lambda, \Omega_{\Lambda} > 0$:
+        
+            Los modelos con constante cosmológica positiva conduce a una ``fuerza repulsiva'', contraria a la fuerza de la gravedad. Son modelos mucho más interesantes los cuales tienen una tasa de expansión mínima. Si $\ddot{a} = 0$ en ec. (4.33), obtenemos el factor de escala mínimo, $a_{min}$ e insertando este valor en (4.34), podemos conocer la tasa mínima de expansión, $\dot{a}_{min}$. Así:
+            
+            
+        \begin{empheq}[box=\fbox]{align}
+            a_{min} & = \left( \frac{\Omega_0}{ 2\Omega_{\Lambda}} \right)^{1/3}, \\
+            \notag \\
+            \dot{a}_{min}^2 & = \frac{3 H_0^2 }{2} (2\Omega_{\Lambda} \Omega_0^2 )^{1/3} - \frac{c^2}{R'^2}.
+        \end{empheq}
+        
+        
+    \end{itemize}
     
     
     
