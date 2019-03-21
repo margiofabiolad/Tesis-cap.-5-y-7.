@@ -1138,17 +1138,110 @@ Estas transformaciones de espacio y tiempo hace que las galaxias sean estacionar
         
         
     \end{itemize}
+
+\vspace{2cm}
     
-    
-    
-    
-    
-    
+     Analicemos la ec. (4.38). 
      
+     \begin{itemize}
+         \item Cuando el lado derecho de la igualdad es mayor que cero, su comportamiento es reflejado en la fig. 6a. Para valores grandes de $a$, la dinámica sigue  a la  de Universos de Sitter
+         
+        \begin{equation}
+        a(t) \propto \exp \left[\left(\frac{\Lambda}{3} \right)^{1/2} t \right] = \exp (\Omega^{1/2}_{\Lambda} H_ot)
+        \end{equation}
+    
+        \item De la misma manera, si el lado derecho de 4.38 es menor que cero, de la figura 6b, la función $a(t)$ tiene dos ramas. Existe un rango de factores de escala para los cuales no hay solución.
+        
+            \begin{itemize}
+                \item [Rama A:] La dinámica está dominada por la constante $\Lambda$; la fuerza repulsiva es tan fuerte que el Universo nunca se contrajo a una escala a la que la fuerza atractiva de la gravedad pudiera contrarestar o vencer su efecto. 
+        
+                \item [Rama B:] En este caso, el Universo nunca se expandió alcanzando valores suficientemente grades del factor de escala $a$ como para que la fuerza repulsiva transportada a través de $\Lambda$ pudiera evitar el colapso del Universo. No presenta una singularidad inicial, por lo que el Universo ``rebotó''  bajo la influencia de la fuerza repulsiva. 
+            \end{itemize}
+            
+            En el caso límite, en el que el parámetro de densidad $\Omega_0 = 0$ la dinámica del modelo y su solución vienen dadas por
+            
+            \begin{align}
+                \dot{a}^2 & = H_0^2 [\Omega_{\Lambda} a^2 - (\Omega_{\Lambda}-1)], \\
+                a & = \left(\frac{\Omega_{\Lambda} - 1}{\Omega_{\Lambda}} \right)^{1/2} \cosh \Omega_{\Lambda}^{1/2} H_0 \tau.
+            \end{align}
+            
+            De esta última relación, $\tau = t - t_{min}$, el cual es medido desde el momento en el que el Universo `rebotó', i.e., cuando $a= a_{min}$. El comportamiento asintótico que presenta es debido al colapso exponencial que experimenta y son soluciones exponenciales de Sitter
+            
+            \begin{equation}
+                a = \left(\frac{\Omega_{\Lambda} - 1}{\Omega_{\Lambda}} \right)^{1/2} \exp (\pm \Omega_{\Lambda}^{1/2} H_0 \tau).
+            \end{equation}
+            
+            En estos Universos `rebotantes', el valor más pequeño de $a$, $a_{min}$, es aquel con el desplazamieto al rojo más grade que un objeto pueda tener. 
+       
+       \item En tercer lugar, tenemos el caso en el que $\dot{a_{min}} \approx 0$. La figura 6c muestra lo que se conoce como el {\textit{modelo de Eddington - Lema\^itre}} donde $\dot{a_{min}} = 0$. La interpretación de A, B y C es:
+       
+       \begin{itemize}
+           \item[A:] El Universo se expandió desde un punto en el origen en algún tiempo pasado finito y eventualmente alcanzará un estado estacionario en el futuro infinito. 
+           \item[B:] El Universo se está expandiendo lejos de una solución estacionaria en el pasado infinito. 
+           \item[C:] Es un estado estacionario y además inestable ya que, de ser perturbado, el Universo va a moverse hacia el estado que colapsa A, o hacia B. 
+           
+           Para el caso del Universo estático de Einstein, el estado estacionario sería alcanzado en el presente día. Para estos modelos con $\dot{a} = 0$, el valor de la constante cosmologica puede ser obtenido de la ec. (4.37):
+           
+           \begin{align}
+               \Lambda & = \frac{3}{2} \Omega_0 H_0^2 (1 + z_c)^3 \hspace{0.4cm} \text{o equivalentemente} \\
+               \Omega_{\Lambda} & = \frac{\Omega_0}{2} (1 + z_c)^3,
+           \end{align}
+           
+           siendo $z_c$ el desplazamiento al rojo de objetos estacionarios. 
+       \end{itemize}
+       
+       
+    \end{itemize}
     
     
     
+     \begin{figure}[H]         
+     \centering
+     \includegraphics[width=1.0\textwidth]{graficos73_pp226Mlalcon.png}
+        \caption{\footnotesize{Modelos con $\Lambda \neq 0$ }. En el gráfico {\bf{a}} los parámetros cosmológicos son $\Omega_0=0.3$ y $\Omega_{\Lambda}= 0.7$, los cuales son valores que se ajustan bastant bien a las estimaciones actuales. {\bf{b}} muestra el Universo `rebotante'con $\Omega_0 = 0.05$ y $\Omega_{\Lambda}=5$. El cero en el tiempo cósmico se ha establecido para cuando $\dot{a}=0$. {\bf{c}} muestra un modelo de Eddington - Lema\^itre que tiene un corrimiento al rojo estacionario $z_c = 3$, lo que es equivalente a un factor de escala $a=0.25$. El modelo {\bf{d}} tiene parámetros $\Omega_0 = 0.01$ y $\Omega_{\Lambda}= 0.99$, donde la edad del Universo puede exceder por mucho a $H_0^{-1}$. Por último, {\bf{a}} y {\bf{d}} son conocidos como los modelos de Lema\^itre. (Bondi, 1960)}
+     \end{figure}
     
+    
+    Ya que los Universos estáticos de Eddington - Lema\^itre no presentan dinámica $\dot{a}=0$, podemos usar (4.44) y sustituirlo en (4.34) para obtener
+    
+    \begin{equation}
+        \Omega_0 = \frac{2}{ (1 + z_c)^3 - 3  (1 + z_c) + 2} = \frac{2}{ z_c^2(z_c + 3)},
+    \end{equation}
+    
+    lo que muestra una relación uno a uno entre la densidad media de materia en el Universo $\Omega_0$ y el desplazamiento al rojo en el estado estacionario $z_c$.
+    
+    La figura 7 muestra los modelos de mundo con $\Lambda \neq 0$  resumidos en un plot de $\Omega_0$  vs. $\Omega_0 + \Omega_{\Lambda}$ (Carroll et a., 1992). 
+    
+    \begin{itemize}
+        \item Los modelos con $\Lambda=0$: encontrados a lo largo de una línea de $45^{\circ}$ y que parten de cero en ambos ejes. 
+    \end{itemize}
+    
+    De la ec. (4.36) puede visualizarse que la geometría de los modelos depende del valor que tenga $\Omega_0 +  \Omega_{\Lambda}$. La unidad separa las geometrías abiertas de los cerradas. 
+    
+    Los modelos que tuvieron un pasado singular y esos que `rebotaron' son separados por la línea correspondiente a modelos que fueron estacionarios en el pasado, y vienen dadas por las ecs. (4.43) o (4.44), y (4.45). También se indican los valores de los desplazamientos al rojo estacionarios en la parte inferior derecha del diagrama, donde encontramos los modelos `merodeadores' ({\textit{loitering}}) (llamados así por Carroll et al.). La línea divisoria también separa aquellos Universos que se expandirán infinitamente de aquellos que volverán a colapsar en un 'Gran Crujido' ({\textit{Big Crunch}}) en el futuro. Por ejemplo, usando (4.45) se encuentra que el modelo que es estacionario a un factor de escala $a=1.5$ o $(1+z_z)=2/3$, tiene un $\Omega_0=1.69$. Así, de (4.44) $\Omega_{\Lambda} =0.25$, de esta manera $\Omega_{\Lambda} + \Omega_0 = 1.94$, puntos que se encuentran en la línea que separa a los modelos que se expandirán infinitamente de esos que colapsarán en un tiempo finito. 
+    
+    
+    \begin{itemize}
+        \item Los modelos con constante cosmológica positiva pueden tener edades mayores a $H_0^{-1}$. En casos límites como los modelos de Eddington - Lema\^itre con $\dot{a}_{min}=0$ en el pasado infinito, el 
+        
+       Los conocidos {\textit{modelos de Lema\^itre}} son otro posible caso de Universos con edades mayores a $H_0^{-1}$, donde el valor de $\Omega_{\Lambda}$ es tal que $\dot{a}_{min} >0$. Como s mencionó arriba, un ejemplo de estos modelos es el de la figura 6d. 
+    \end{itemize}
+    
+    
+    \begin{figure}[H]         
+     \centering
+     \includegraphics[width=1.0\textwidth]{friedmann_worldspp228_Malcolm.png}
+        \caption{\footnotesize{Clasificación de los modelos de Friedmann con $\Omega_{\Lambda} \neq 0$, son mostrados en un gráfico de $\Omega_0$ vs. $\Omega_{\Lambda} + \Omega_0$ (Carroll et al., 1992). Los modelos de Eddington - Lema\^itre son aquellos a lo largo de la línea etiquetada como {\textit{loitering} }.}}
+     \end{figure}
+    
+    Existe una fuerte evidencia de que Universos con geometría plana tiene un valor de $\Omega_{\Lambda} + \Omega_0$ cercano a la unidad. La dinámica de estos modelos planos con diferentes valores de $\Omega_0$ y $\Omega_{\Lambda}$ se muestran en la figura 8. Dichos modelos muestran cómo la edad del Universo puede ser más grande que $H_0^{-1}$ para valores de $\Omega_{\Lambda}$ suficientemente grandes. 
+    
+    
+    \begin{figure}[H]         
+     \centering
+     \includegraphics[width=0.9\textwidth]{flat_models_pp229_Malcolm.png}
+        \caption{\footnotesize{Dinámica de modelos con geometría plana, $\Omega_{\Lambda} + \Omega_0 = 1$. El eje $x$ tiene unidades de  $H_0^{-1}$. Este gráfico puede ser comparado con la figura 4, el cual representa el caso donde $\Omega_{\Lambda}=0$ .}}
+     \end{figure}
     
     
     
