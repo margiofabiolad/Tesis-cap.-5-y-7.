@@ -1,5 +1,6 @@
 \documentclass[11pt]{article}
 
+%\usepackage[spanish,es-lcroman]{babel}
 \usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath, amsthm, amssymb}
@@ -12,7 +13,7 @@
 \usepackage{empheq} % close equations with align in a box / for one eq. to use only \boxed
 \usepackage[none]{hyphenat} % for latex does not cut the words 
 
-
+\decimalpoint 
 
 \title{Cosmología. Marco Teórico}
 \author{Margionet Díaz}
@@ -327,13 +328,13 @@ Esta es la expresión para el fenómeno de la {\bf{dilatación del tiempo}}. Gal
 Dilatación del tiempo: La dilatación del tiempo es el fenómeno predicho por la teoría de la relatividad, por el cual un observador observa que el reloj de otro (un reloj físicamente idéntico al suyo) está marcando el tiempo a un ritmo menor que el suyo. Esto se suele interpretar normalmente como que el tiempo se ha ralentizado para el otro reloj, pero eso es cierto solamente en el contexto del sistema de referencia del observador. Localmente, el tiempo siempre está pasando al mismo ritmo. El fenómeno de la dilatación del tiempo se aplica a cualquier proceso que manifieste cambios a través del tiempo y espacio.)
 
 
-(29) nos da una expresión para el corrimiento al rojo. Si $\Delta t_1 = \nu_1^{-1}$ es el periodo de las ondas emitidas y  $\Delta t_0 = \nu_0^{-1}$ el período observado, para la ec. 29 ahora se escribe como
+(2.7) nos da una expresión para el corrimiento al rojo. Si $\Delta t_1 = \nu_1^{-1}$ es el periodo de las ondas emitidas y  $\Delta t_0 = \nu_0^{-1}$ el período observado, para la ec. (2.7) ahora se escribe como
 
 \begin{equation}
     \nu_0 = \nu_1(t_1) a(t_1),
 \end{equation}
 
-y de (23) y usando (30) 
+de (2.1) y (2.8) 
 
 \begin{align}
      z & = \frac{\lambda_0 - \lambda_e}{\lambda_e} = \frac{\lambda_0 }{\lambda_e} - 1 = \frac{\nu_1}{\nu_0}, \\
@@ -347,7 +348,7 @@ Cuando observamos una galaxia con desplazamiento al rojo $z = 1$, el factor de e
 
 (a (t) es una función universal conocida como el factor de escala que describe cómo las distancias relativas entre cualquiera de los dos observadores fundamentales cambian con el tiempo cósmico t.)
 
-De (26) podemos obtener una expresión para la {\bf{coordenada de distancia radial comovil}} $r$:
+De (2.4) podemos obtener una expresión para la {\bf{coordenada de distancia radial comovil}} $r$:
 
     \begin{equation}
         r = \int_{t_1}^{t_0}{\frac{c dt }{a (t)}}.
@@ -355,7 +356,7 @@ De (26) podemos obtener una expresión para la {\bf{coordenada de distancia radi
 
     $r$ {\bf{es una distancia artificial que depende de cómo el Universo se ha expandido entre la emisión y recepción de la radiación}}.
 
-La dilatación del tiempo, expresión 28, está relacionada con las supernovas tipo 1a (SN 1a). La estrecha dispersión en sus magnitudes absolutas que tiene exactamente la misma curva de luz  (la variación en el tiempo en sus luminosidades durante la explosión de la SN) ha hecho que estos objetos sean herramientas útiles en cosmología. Las grandes luminosidades de las SN tipo 1a hace que estas puedas ser observadas a altos corrimiento al rojo. 
+La dilatación del tiempo, expresión (2.7), está relacionada con las supernovas tipo 1a (SN 1a). La estrecha dispersión en sus magnitudes absolutas que tiene exactamente la misma curva de luz  (la variación en el tiempo en sus luminosidades durante la explosión de la SN) ha hecho que estos objetos sean herramientas útiles en cosmología. Las grandes luminosidades de las SN tipo 1a hace que estas puedas ser observadas a altos corrimiento al rojo. 
 
 
 Otra prueba de la dilatación del tiempo usando las propiedades de las SN Ia es usar la evolución espectral como un reloj para comparar el tiempo de evolución de SN de alto y bajo redshift. Usando la SN 1997ex, la cual tenía un $z= 0.361$, el tiempo entre el primero y segundo espectro fue de $24.88$ días y entre el primero y tercero de $30.95$ días. La cantidad de envejecimiento en el marco en reposo de la SN debe ser un factor $1/(z+1)$ menor a las edades de $18.28$ y $22.74$ días. La técnica de las edades aplicada a la SN fueron de $16.97 \pm 2.75$ días y $18.01 \pm 3.14$ días, en excelente acuerdo con lo esperado de la dilatación de tiempo cosmológico. 
@@ -395,7 +396,7 @@ La {\bf{constante de Hubble define la tasa de expansión del Universo en el pres
         H(t) = \frac{\dot{a}}{a}.
     \end{equation}
 
-\subsection{Diámetros angular}
+\subsection{Diámetros angulares}
 
 En la sección anterior, hemos considerado únicamente la parte radial. Siguiendo con la métrica de Roberton - Walker 
 
@@ -405,10 +406,10 @@ En la sección anterior, hemos considerado únicamente la parte radial. Siguiend
   
   \begin{align}
       d & = a(t) R' \sin \left(\frac{r}{R'} \right) \Delta \theta = a(t) D \Delta \theta = \frac{D \Delta \theta}{1+z}, \\
-      \Delta \theta & = \frac{d(1+z)}{D}.
+      \Delta \theta & = \frac{d(1+z)}{D},
   \end{align}
 
-Donde distinguimos que $D = R' \sin(r/R')$. Para pequeños $z$, $z << 1, r <<R'$ la ec. 41 se reduce a la relación euclidiana $d = r \Delta \theta$. Entonces 41 puede ser escrita también como:
+donde distinguimos una nueva {\textit{medida de distancia}} $D = R' \sin(r/R')$. Para pequeños $z$, $z << 1, r <<R'$ la ec. (2.19) se reduce a la relación euclidiana $d = r \Delta \theta$. Entonces 41 puede ser escrita también como:
 
     \begin{equation}
         \Delta \theta = \frac{d}{D_A},
@@ -919,7 +920,7 @@ Podemos suponer que la fuente emite $N(\nu_1)$ fotones con energía $h \nu_1$, e
     \end{wrapfigure}
     
     
-       En la figura 4 se muestran algunas soluciones a la ec. 7.21. Este gráfico muestra la relación entre la dinámica y geometría de los modelos de Friedmann sin constante cosmológica. El eje $x$ viene en unidades de $H_0^{-1}$. Nótese la línea de la presente época $a=1$.  Las pendientes en ese punto son siempre $1$. Así mismo, la edad actual del Universo para cada parámetro es dada por la intersección de cada curva con la línea en $a=1$. 
+       En la figura 4 se muestran algunas soluciones a la ec. 7.21. Este gráfico ilustra la relación entre la dinámica y geometría de los modelos de Friedmann sin constante cosmológica. El eje $x$ viene en unidades de $H_0^{-1}$. Nótese la línea de la presente época $a=1$.  Las pendientes en ese punto son siempre $1$. Así mismo, la edad actual del Universo para cada parámetro es dada por la intersección de cada curva con la línea en $a=1$. 
     
 
     
@@ -1096,7 +1097,7 @@ Estas transformaciones de espacio y tiempo hace que las galaxias sean estacionar
        \begin{empheq}[box=\fbox]{align}
             \ddot{a} & = - \frac{\Omega_0 H_0^2 }{ 2a^2} +  H_0^2 \Omega_{\Lambda} a, \\
             \notag \\
-            \dot{a}^2 & = \frac{\Omega_0 H_0^2  }{a} - \frac{c^2}{R'^2} + 3 H_0^2 \Omega_{\Lambda} a^2.
+            \dot{a}^2 & = \frac{\Omega_0 H_0^2  }{a} - \frac{c^2}{R'^2} + H_0^2 \Omega_{\Lambda} a^2.
         \end{empheq}
          
     A continuación, se sustityen los valores de $a$ y $\dot{a}$ en 4.34 para la época actual, obteniéndose
@@ -1104,14 +1105,18 @@ Estas transformaciones de espacio y tiempo hace que las galaxias sean estacionar
     \begin{align}
         H_0^2 & = \Omega_0 H_0^2  - \frac{c^2}{R'^2} +  H_0^2 \Omega_{\Lambda}, \notag \\
         \frac{c^2}{R'^2} & = H_0^2 [(\Omega_0 + \Omega_{\Lambda}) - 1] \hspace{1cm} \text{o} \\
-        \kappa & = \frac{1}{R'^2} = \frac{[(\Omega_0 + \Omega_{\Lambda})]}{C^2/H_0^2}.
+        \notag \\
+        \kappa & = \frac{1}{R'^2} = \frac{[(\Omega_0 + \Omega_{\Lambda})]}{c^2/H_0^2}.
     \end{align}
         
    De aquí, la condición de que las secciones espaciales son espacios planos Euclideos se escribe 
    
-   $$(\Omega_0 + \Omega_{\Lambda}) = 1.$$
+   \begin{equation}
+      (\Omega_0 + \Omega_{\Lambda}) = 1. 
+   \end{equation}
+  
    
-   Recordando que el radio de curvatura $R_c$ cambia con el factor de escala, $R_c=aR'$, si la curvatura del espacio es cero en este momento, también debió serlo en todos los tiempos del pasado. 
+   Recordando que el radio de curvatura, $R_c$, cambia con el factor de escala, $R_c=aR'$, si la curvatura del espacio es cero en este momento, también debió serlo en todos los tiempos del pasado. 
     
     
     %%\subsection{Variando la Ecuación de Estado de la Energía del Vacío }
@@ -1173,7 +1178,7 @@ Estas transformaciones de espacio y tiempo hace que las galaxias sean estacionar
             
             En estos Universos `rebotantes', el valor más pequeño de $a$, $a_{min}$, es aquel con el desplazamieto al rojo más grade que un objeto pueda tener. 
        
-       \item En tercer lugar, tenemos el caso en el que $\dot{a_{min}} \approx 0$. La figura 6c muestra lo que se conoce como el {\textit{modelo de Eddington - Lema\^itre}} donde $\dot{a_{min}} = 0$. La interpretación de A, B y C es:
+       \item En tercer lugar, tenemos el caso en el que $\dot{a_{min}} \approx 0$. La figura 6c ilustra lo que se conoce como el {\textit{modelo de Eddington - Lema\^itre}} donde $\dot{a_{min}} = 0$. La interpretación de A, B y C es:
        
        \begin{itemize}
            \item[A:] El Universo se expandió desde un punto en el origen en algún tiempo pasado finito y eventualmente alcanzará un estado estacionario en el futuro infinito. 
@@ -1198,7 +1203,7 @@ Estas transformaciones de espacio y tiempo hace que las galaxias sean estacionar
      \begin{figure}[H]         
      \centering
      \includegraphics[width=1.0\textwidth]{graficos73_pp226Mlalcon.png}
-        \caption{\footnotesize{Modelos con $\Lambda \neq 0$ }. En el gráfico {\bf{a}} los parámetros cosmológicos son $\Omega_0=0.3$ y $\Omega_{\Lambda}= 0.7$, los cuales son valores que se ajustan bastant bien a las estimaciones actuales. {\bf{b}} muestra el Universo `rebotante'con $\Omega_0 = 0.05$ y $\Omega_{\Lambda}=5$. El cero en el tiempo cósmico se ha establecido para cuando $\dot{a}=0$. {\bf{c}} muestra un modelo de Eddington - Lema\^itre que tiene un corrimiento al rojo estacionario $z_c = 3$, lo que es equivalente a un factor de escala $a=0.25$. El modelo {\bf{d}} tiene parámetros $\Omega_0 = 0.01$ y $\Omega_{\Lambda}= 0.99$, donde la edad del Universo puede exceder por mucho a $H_0^{-1}$. Por último, {\bf{a}} y {\bf{d}} son conocidos como los modelos de Lema\^itre. (Bondi, 1960)}
+        \caption{\footnotesize{Modelos con $\Lambda \neq 0$ }. En el gráfico {\bf{a}} los parámetros cosmológicos son $\Omega_0=0.3$ y $\Omega_{\Lambda}= 0.7$, los cuales son valores que se ajustan bastante bien a las estimaciones actuales. {\bf{b}} ilustra el Universo `rebotante'con $\Omega_0 = 0.05$ y $\Omega_{\Lambda}=5$. El cero en el tiempo cósmico se ha establecido para cuando $\dot{a}=0$. {\bf{c}} muestra un modelo de Eddington - Lema\^itre que tiene un corrimiento al rojo estacionario $z_c = 3$, lo que es equivalente a un factor de escala $a=0.25$. El modelo {\bf{d}} tiene parámetros $\Omega_0 = 0.01$ y $\Omega_{\Lambda}= 0.99$, donde la edad del Universo puede exceder por mucho a $H_0^{-1}$. Por último, {\bf{a}} y {\bf{d}} son conocidos como los modelos de Lema\^itre. (Bondi, 1960)}
      \end{figure}
     
     
@@ -1210,7 +1215,7 @@ Estas transformaciones de espacio y tiempo hace que las galaxias sean estacionar
     
     lo que muestra una relación uno a uno entre la densidad media de materia en el Universo $\Omega_0$ y el desplazamiento al rojo en el estado estacionario $z_c$.
     
-    La figura 7 muestra los modelos de mundo con $\Lambda \neq 0$  resumidos en un plot de $\Omega_0$  vs. $\Omega_0 + \Omega_{\Lambda}$ (Carroll et a., 1992). 
+    La figura 7 ilustra los modelos de mundo con $\Lambda \neq 0$  resumidos en un plot de $\Omega_0$  vs. $\Omega_0 + \Omega_{\Lambda}$ (Carroll et a., 1992). 
     
     \begin{itemize}
         \item Los modelos con $\Lambda=0$: encontrados a lo largo de una línea de $45^{\circ}$ y que parten de cero en ambos ejes. 
@@ -1231,10 +1236,10 @@ Estas transformaciones de espacio y tiempo hace que las galaxias sean estacionar
     \begin{figure}[H]         
      \centering
      \includegraphics[width=1.0\textwidth]{friedmann_worldspp228_Malcolm.png}
-        \caption{\footnotesize{Clasificación de los modelos de Friedmann con $\Omega_{\Lambda} \neq 0$, son mostrados en un gráfico de $\Omega_0$ vs. $\Omega_{\Lambda} + \Omega_0$ (Carroll et al., 1992). Los modelos de Eddington - Lema\^itre son aquellos a lo largo de la línea etiquetada como {\textit{loitering} }.}}
+        \caption{\footnotesize{Clasificación de los modelos de Friedmann con $\Omega_{\Lambda} \neq 0$, son ilustradosdos en un gráfico de $\Omega_0$ vs. $\Omega_{\Lambda} + \Omega_0$ (Carroll et al., 1992). Los modelos de Eddington - Lema\^itre son aquellos a lo largo de la línea etiquetada como {\textit{loitering} }.}}
      \end{figure}
     
-    Existe una fuerte evidencia de que Universos con geometría plana tiene un valor de $\Omega_{\Lambda} + \Omega_0$ cercano a la unidad. La dinámica de estos modelos planos con diferentes valores de $\Omega_0$ y $\Omega_{\Lambda}$ se muestran en la figura 8. Dichos modelos muestran cómo la edad del Universo puede ser más grande que $H_0^{-1}$ para valores de $\Omega_{\Lambda}$ suficientemente grandes. 
+    Existe una fuerte evidencia de que Universos con geometría plana tiene un valor de $\Omega_{\Lambda} + \Omega_0$ cercano a la unidad. La dinámica de estos modelos planos con diferentes valores de $\Omega_0$ y $\Omega_{\Lambda}$ se muestran en la figura 8. Dichos modelos ilustran cómo la edad del Universo puede ser más grande que $H_0^{-1}$ para valores de $\Omega_{\Lambda}$ suficientemente grandes. 
     
     
     \begin{figure}[H]         
@@ -1243,6 +1248,264 @@ Estas transformaciones de espacio y tiempo hace que las galaxias sean estacionar
         \caption{\footnotesize{Dinámica de modelos con geometría plana, $\Omega_{\Lambda} + \Omega_0 = 1$. El eje $x$ tiene unidades de  $H_0^{-1}$. Este gráfico puede ser comparado con la figura 4, el cual representa el caso donde $\Omega_{\Lambda}=0$ .}}
      \end{figure}
     
+    \subsection{Cosmología Observacional}
+    
+    La cosmología actual es dominada por modelos de mundo con un valor finito de la constante cosmológica, sin embargo, modelos con $\Omega_{\Lambda}$ son igualmente considerados para hacer comparaciones y así obtener mejores estimaciones sobre parámetros cosmológicos.
+    
+    \subsubsection{Parámetro de Descaleración}
+    
+    De secciones anteriores, la constante de Hubble $H_0$ ha sido introducida, y sabemos que mide la tasa de expansión del Universo en el tiempo actual, i.e., $a=1$. Así mismo, también podemos considerar el {\textit{parámetro de desaceleración}} $q_0$ el cual es adimensional y en la presente época viene definido como
+    
+    \begin{equation}
+        q_0= - \left( \frac{a\ddot{a}}{\dot{a}^2}\right)_{t_0}.
+    \end{equation}
+    
+    Haciendo las consideraciones de $a(t_0)=1$ y $\dot{a}=H_0$ para la presente época, 4.46 se convierte en: 
+    
+    \begin{equation}
+        q_0= - \frac{\ddot{a}}{H_0^2}.
+    \end{equation}
+    
+    
+    Haciendo uso de la ecuación Dinámica (), y sustituyendo en 4. se obtiene
+
+\begin{equation}
+	q_0 = \frac{\Omega_0}{2} - \Omega_{\Lambda}.
+\end{equation}
+
+Usando los valores preferenciales de $\Omega_{\Lambda} = 0.7$ y $\Omega_0 = 0.3$, nosotros obtenemos un valor del parámetro de desaceleración $q_0 = -0.55$, lo cual indica que efectivamente, el Universo se está desacelerando en la presente época producto de que la energía oscura domina sobre la gravedad. 
+
+Algunos resultados siguen acerca del desplazamiento al rojo y la relación que guarda con el tiempo cósmico, medidas de distancias, diámetro angular, densidad de flujo y volumen comóvil, para modelos de mundo con y sin el término de constante cosmológica $\Omega_{\Lambda}$. En lo que sigue, un análisis matemático es realizado para cada una de las relaciones. 
+
+\subsubsection{Relación Tiempo Cósmico – Corrimiento al Rojo}
+
+Para la relación del dezplazamiento al rojo con el tiempo cósmico, podemos combinar las ecs. 4.33 y 4.34. Así, 
+
+    \begin{align}
+	    \dot{a}^2 &= \frac{\Omega_0 H_0}{a} – H_0^2 [(\Omega_0 + \Omega_{\Lambda} -1] +  \Omega_{\Lambda}H_0^2 a^2, \notag \\
+	    \dot{a} & = H_0 \left[ \Omega_0 \left( \frac{1}{a} - 1 \right) + \Omega_{\Lambda}(a^2 - 1) + 1 \right]^{1/2},
+    \end{align}
+
+y considerando que $a = (1+z)^{-1}$,
+
+    \begin{equation}
+	    \frac{dz}{dt} = - H_0(1+z) [ (1+z)^2 (\Omega_0 z + 1) - \Omega_{\Lambda} z (z+2) ]^{1/2}.
+    \end{equation}
+
+    El tiempo cósmico, desde el Big Bang hasta cualquier $z$ puede ser medido por integrar 7.46, con límites desde $z = \infty$ hasta $z$. 
+
+    \begin{equation}
+	    t = \int_0^t{dt} = - \frac{1}{H_0} \int_{\infty}^z{\frac{dz}{  (1+z)[(1+z)^2 (\Omega_0 z + 1) - \Omega_{\Lambda} z (z+2) ]^{1/2}}.} 
+	\end{equation}
+
+
+    Obtenida la relación anterior, se tiene:
+
+        \begin{itemize}
+	        \item Modelos con $\Omega_{\Lambda}=0$. 
+
+		Para un parámetro de densidad $\Omega_0 >1$ es posible escribir 
+
+		$$ 
+		x = \frac{(\Omega_0-1)a}{\Omega_0} = \frac{(\Omega_0-1)}{\Omega_0 (1+z)} , 		
+		$$
+		
+		obteniendo así que la relación corrimiento al rojo -  tiempo cósmico 
+
+		\begin{equation}
+			t(z) = \frac{\Omega_0}{H_0( \Omega_0 - 1)^{3/2}}[\sin^{-1} x^{1/2} - x^{1/2} (1-x)^{1/2}].
+		\end{equation}
+		
+		Y haciendo el mismo procedimiento pero para el caso en el que $\Omega_0 < 1$,
+
+	    $$
+	    y = \frac{(1- \Omega_0)a}{\Omega_0} = \frac{(1-\Omega_0)}{\Omega_0 (1+z)},
+	    $$
+
+    encontrándose
+
+    \begin{equation}
+	    t(z) = \frac{\Omega_0}{H_0(1 - \Omega_0)^{3/2}}[ y^{1/2} (1+y)^{1/2} + \sinh^{-1} y^{1/2}].
+    \end{equation}
+    
+    Y si asumimos corrimientos al rojo muy altos, $z>>1$ y $\Omega_0 z >>1$, entonces 4.52 y 4.53 se reducen a 
+
+    \begin{equation}
+        t(z) = \frac{2}{3H_0 \Omega_0^{1/2}} z^{-3/2},
+    \end{equation}
+		
+		
+		y entonces hallar la edad del Universo para diferentes valores de $\Omega_0$ es posible. 
+
+        \begin{itemize}
+
+            \item[-] Para $\Omega_0>1$:
+
+            \begin{equation}
+	           t_0 = \frac{\Omega_0}{H_0(\Omega_0 - 1)^{3/2}} \left[ \sin^{-1} \left( \frac{ \Omega_0 - 1}{\Omega_0} \right)^{1/2} - \frac{{(\Omega_0 - 1)}^{1/2}}{\Omega_0 } \right].
+            \end{equation}
+            
+            \item[-] $\Omega_0=1$:
+            
+            \begin{equation}
+                t_0 = \frac{2}{3H_0}.
+            \end{equation}
+
+        \item[-] $\Omega_0<1$:
+        
+        \begin{equation}
+       t_0 = \frac{\Omega_0}{H_0(1-\Omega_0)^{3/2}} \left[   \frac{(   1- \Omega_0)^{1/2}}{\Omega_0}  - \sinh^{-1} \left( \frac{{ 1-\Omega_0}}{\Omega_0 } \right)^{1/2} \right].
+            \end{equation}
+            
+        \end{itemize}
+        
+        
+        Los casos más útiles y simples son aquellos con $\Omega=1$, ec. (4.56); el caso de un Universo vacío tipo Milne, $\Omega_0 =0$ y la edad es $H_0^{-1}$; y el caso con $\Omega_0=2$, cuya edad calculada es $0.571 H_0^{-1}$. 
+        
+        \item Modelo con $\Omega_{\Lambda} \neq 0$:
+        
+        Regresando a (4.52), podemos encontrar la relación del desplazamiento al rojo con el tiempo cósmico para una valor finito de $\Omega_{\Lambda}$. Los modelos con curvatura del espacio cero son de particular interés y para que esto ocurra, de (4.36) que $R'\rightarrow{\infty}$, cumpliéndose la condición (4.37) $(\Omega_{\Lambda}  + \Omega_0) =1$ para espacios planos Euclideos. (4.52) se reduce a:
+        
+        \begin{equation}
+             t = \int_0^t{dt} = - \frac{1}{H_0}\int_{\infty}^z{\frac{dz}{(1+z)[\Omega_0(1+z)^3+\Omega_{\Lambda}]^{1/2}}},
+        \end{equation}
+        
+        con solución 
+        
+        \begin{align}
+            t &= \frac{2}{3H_0\Omega_{\Lambda}^{1/2}} \ln \left(\frac{1+\cos \theta }{\sin \theta} \right)   \hspace{0.5cm} \text{donde:} \notag \\
+            \tan \theta &= \left(\frac{\Omega_0}{\Omega_{\Lambda}} \right)^{1/2} (1+z)^{3/2}
+        \end{align}
+        
+        Para la época presente, $z=0$. Así: 
+        
+        \begin{equation}
+            t_0 = \frac{2}{3H_0\Omega_{\Lambda}^{1/2}} \ln \left[\frac{1 + \Omega_{\Lambda}^{1/2}}{(1-\Omega_{\Lambda})^{1/2}} \right].
+        \end{equation}
+        
+        De esta última relación, es posible encontrar modelos de Friedmann que tengan edades mayores que $H_0^{-1}$ y que además, sean espacios planos. Para valores del los parámetros $\Omega_0 = 0.1$ y $\Omega_{\Lambda}=0.9$, la edad del Universo es de $1.28 H_0^{-1}$; para valores ideales de $\Omega_{\Lambda} = 0.7$ y $\Omega_0=0.3$, se tiene un Universo con $0.964 H_0^{-1}$. 
+    
+    \end{itemize}
+    
+    \subsubsection{Medidas de Distancias en función del Desplazamiento al Rojo}
+    
+   Nos interesa ahora obtener valores de la coordenada de distancia comóvil, $r$ y la medida de la distancia $D$, para esto vamos a recordar la relación (2.3)
+   
+   \begin{equation}
+       dr = - \frac{cdt}{a(t)} = -c \, dt (1+z).
+   \end{equation}
+    
+    Nuevamente, de (4.51)
+    
+    \begin{equation}
+         dr = - \frac{cdt}{a(t)} = \frac{c}{H_0}  \frac{dz}{[ (1+z)^2 (\Omega_0 z + 1) - \Omega_{\Lambda} z (z+2) ]^{1/2}},
+    \end{equation}
+    
+    e integrando desde $z=0$ a $z=0$
+    
+    \begin{equation}
+        r = \frac{c}{H_0} \int_0^z{\frac{dz}{[ (1+z)^2 (\Omega_0 z + 1) - \Omega_{\Lambda} z (z+2) ]^{1/2}}}.
+    \end{equation}
+    
+    
+    Note que determinar $D$ está implícito ya que $D = R' \sin(r/R')$, donde $R'$ es la hallada en la ec. (4.35), $ c^2/R'^2  = H_0^2 [(\Omega_0 + \Omega_{\Lambda}) - 1]$. 
+    
+    A continuación, repetimos el mismo análisis de modelos con $\Omega_{\Lambda} =0$ y $\Omega_{\Lambda} \neq 0$. 
+    
+    
+    \begin{itemize}
+	        \item Modelos con $\Omega_{\Lambda=0}$. 
+
+		Considerando $\Omega_0 >1$, la última expresión se reduce a 
+		
+		\begin{align}
+		    r &= \frac{c}{H_0} \int_0^z{\frac{dz}{1+z) (\Omega_0 z + 1)^{1/2}}}, \\
+		    r& =  \frac{2c}{H_0 (\Omega_0 z -1)} \left[ \tan^{-1} \left(\frac{\Omega_0 z + 1}{\Omega_0 z -1} \right)^{1/2} - \tan^{-1} (\Omega_0 -1)^{-1/2} \right].
+		\end{align}
+     
+     Y, en el caso en que el parámetro de densidad $\Omega_0 <1$, se tiene
+     
+     \begin{equation}
+         D = \frac{2c}{H_0 \Omega_0^2( 1+z)} \{ \Omega_0 z+ (\Omega_0 - 2) [(\Omega_0 z+1)^{1/2} - 1 ] \}.
+     \end{equation}
+    
+    La expresión (4.67) es la famosa fórmula derivada por Mattig (Mattig, 1959), la cual es correcta para diferentes valores de $\Omega_0$. Por ejemplo, para $\Omega_0 = 0$, que es el Universo de Milne, la expresión se convierte en 
+    
+    
+    \begin{equation}
+         D = \frac{cz}{H_0} \frac{\left( 1 + \frac{Z}{2} \right)}{(1+z)}.
+    \end{equation}
+    
+    Las figuras 9 y 10 muestran las variaciones de $r$ y $D$ con $z$ para un rango de $\Omega_0$. 
+    
+    \item Modelos con $\Omega_{\Lambda} \neq 0$:
+    
+    Por lo general, se puede evaluar $r$ y $D$ por integración numérica. Por ejemplo, modelos planos donde $(\Omega_{\Lambda} + \Omega_0)=1$ (ec. 4.37), para diferentes valores de $\Omega_0$ se muestran el la figura 11. Debido a la geometría de estos modelos planos, $R'=\infty, r = D$.
+    
+    
+    
+    \end{itemize}
+    
+    
+    Un análisis más profundo podemos hacer de estas tres figuras. Primero, para el caso de las figuras 9 y 10 ($\Omega_{\Lambda} =0$), note cómo para un parámetro de densidad mayor, tanto la coordenada de distancia radial comóvil, $r$, así como la distancia medida, $D$, son más grandes para un cierto desplazamiento al rojo, $z$. Esto puede ser justificado por considerar el tiempo que viaja la luz a lo largo de la geodésica radial desde el objeto hasta el observador en la Tierra. Mientras el valor del parámetro de desacaleración universal, $q_0$, es menor (una aceleración mayor) mayor es la distancia que debe recorrer la luz para alcanzar la Tierra. Lo mismo ocurre para la figura 11, entre mayor sea el valor de $\Omega_{\Lambda}$ mayor será el tiempo de viaje de la luz hasta la Tierra. Así mismo, es importante observar la influencia de la geometría espacial curva en las figs. 9 y 10. Para el caso en que $\Omega_0 = 0$, las geometrías coinciden por ser planas en ambos casos. Ya para otros valores, la ubicación geométrica de las medidas de $D$ en figura 10 divergen en el modelo debido a las geometrías hiperbólicas $\Omega_0 <1$ y esféricas $\Omega_0 >1$. 
+    
+\begin{figure}[H]
+        \begin{minipage}[b]{0.5\linewidth}
+        \centering
+        \includegraphics[scale=0.42]{redshift_r7a.png}
+        \caption{\footnotesize{Variación del desplzamiento al rojo de la coordenada radial comóvil $r$ para $\Omega_{\Lambda}=0$.}}
+        %\label{fig:figura1}
+    \end{minipage}
+        \hspace{0.5cm}
+    \begin{minipage}[b]{0.4\linewidth}
+        \centering
+        \includegraphics[scale=0.4]{redshift_r77.png}
+        \caption{\footnotesize{Variación de $z$ de la distancia medida $D$ (en unidades de $c/H_0$) para $\Omega_{\Lambda}=0$. }}
+        %\label{fig:figura2}
+    \end{minipage}
+\end{figure}
+
+
+    
+    \begin{figure}[H]         
+     \centering
+     \includegraphics[width=0.7\textwidth]{redshift_r76b.png}
+        \caption{\footnotesize{Dinámica de modelos con geometría plana, $\Omega_{\Lambda} + \Omega_0 = 1$. El eje $x$ tiene unidades de  $H_0^{-1}$. Este gráfico puede ser comparado con la figura 4, el cual representa el caso donde $\Omega_{\Lambda}=0$ .}}
+     \end{figure}
+    
+    \subsubsection{Relación del Diámetro Angular con el Desplazamiento al Rojo}
+    
+    De nuevo, consideremos dos casos: 
+    
+    \begin{itemize}
+        \item $\Omega_{\Lambda} =0$:
+        
+        De la sección (2.3), {\textit{Diámetros Angulares}}, se había encontrado la relación (2.19)
+        
+        \begin{equation}
+            \Delta \theta  = \frac{d(1+z)}{D},
+        \end{equation}
+        
+        y usando, además (4.67), podemos obtener lo que se conoce como {\textit{diámetro angular métrico}}, ilustrado en la figura 12. Es un tipo de diámetro angular que da la variación del tamaño angular observado en una barra rígida de una unidad de longitud propia. 
+        
+        De la figura 12, las curvas para diferentes valores de $\Omega_0$ son mostrados. En el caso del modelo vacío o modelo de Milne, $\Omega_0=0$, no hay mínimo. Para el modelo crítico, $\Omega_0=1$ este es observado para un desplazamiento al rojo $z=1.25$, y en el caso de $\Omega_0=2$ el mínimo se ubica en un $z=1$.
+        
+        La causa de estos mínimos es debido: 
+
+    \begin{itemize} 
+
+	    \item La geometría espacial curva del modelo considerado.
+	    \item Una `barra rígida’ abarca una parte mayor de la esfera celeste para desplazamietos al rojo, que es causado por el $(1+z)$ en la relación (2.20).
+
+    \end{itemize}
+        
+        Por otra parte, es importante no confundir la diámetro angular métrico deotros tipos de diámetros angulares, los cuales son utilizados para medir el tamaño de galaxias. Si se define algún brillo superficial limitante, como el brillo superficial bolométrico varía con el desplzamiento al rojo como $(1+z)^{-4}$, entonces el tamaño angular medido para varios $z$ no son barras rígicas de longitud propia fija. 
+        
+        La relación desplazamiento al rojo -  diámetro angular se resuelve por lo que se conoce como {\textit{diámetros angulares isofotales}}, lo cual amerita usar correcciones K para que pueda ser utilizado como una función del radio dentro de la galaxia. BUSCAR MÁS!
+        
+        \item En el caso de valores finitos de $\Omega_{\Lambda}$ y con geometría plana se observan también en la figura 13, la cual muestra un mínimo a algún valor de $z$ lo cual refleja que $r(z)$ se satura para desplazamientos al rojo mayores (fig. 13). De esta manera, el término $(1+z)$ en (2.20) domina la dependencia sobre el desplazamiento al rojo. 
+        
+\end{itemize}
     
     
     
@@ -1250,21 +1513,121 @@ Estas transformaciones de espacio y tiempo hace que las galaxias sean estacionar
     
     
     
+    \begin{figure}[H]
+        \begin{minipage}[b]{0.42\linewidth}
+        \centering
+            \includegraphics[scale=0.40]{angular_diameter78a_pp235Malcolm.png}
+            \caption{\footnotesize{Variación del diámetro angular de una barra rígida de unidad de longitud propia para un desplazamiento al rojo dado con $\Omega_{\Lambda}=0$.}}
+            %\label{fig:figura1}
+    \end{minipage}
+        \hspace{0.5cm}
+    \begin{minipage}[b]{0.45\linewidth}
+        \centering
+            \includegraphics[scale=0.40]{angular_diameter78b_pp235Malcolm.png}
+            
+            \caption{\footnotesize{Variación del diámetro angular de una barra rígida de unidad de longitud propia para un $z$ dado con $\Omega_{\Lambda} \neq 0$, incluyendo el caso de geometría plana $\Omega_{\Lambda} + \Omega_0 =1$. }}
+        %\label{fig:figura2}
+    \end{minipage}
+\end{figure}
     
     
+    \subsubsection{Relación Densidad de Flujo – Desplazamiento al Rojo}
+
+\begin{itemize} 
+
+\item Modelos con $\Omega_{\Lambda} =0$:
+
+Regresando a la sección 2.4,  habíamos encontramos una relación para la densidad de flujo de la fuente, esto es, la energía recibida por unidad de tiempo, por unidad de área y por unidad de ancho de banda, ec. (2.28)
+
+\begin{equation}
+	S(\nu_0) = \frac{N(\nu_1)h \nu_0 \Delta \Omega}{4 \pi \Delta t_0 \Delta \nu_0 (\pi/4) \Delta l^2},
+\end{equation}
+
+donde al haberse considerado la dilatación del tiempo cosmológico,  (2.7), las relaciones (2.8) y de la luminosidad, (2.22) se llegó a 
+
+\begin{equation}
+	S(\nu_0) = \frac{L(\nu_1) a(t_1)}{4 \pi D^2} = \frac{L(\nu_1) }{4 \pi D^2(1+Z)}.
+\end{equation}
+
+Para espectros que siguen la forma de ley de potencia $L(\nu) \propto \nu^{-\alpha}$ 
+
+\begin{equation}
+	S(\nu_0) = \frac{L(\nu_0) }{4 \pi D^2(1+Z)^{1+\alpha}},
+\end{equation}
+
+
+donde la medida de distancia $D$ es la determinada en (4.67), siendo la expresión para un Universo con $\Omega_0 > 0$, además de $\Omega_{\Lambda} =0$. La figuras 14 y 15 muestra la variación de la densidad de una fuente de luminosidad $1 \mathrm{W \, Hz^{-1}}$ con un espectro de potencia $L(\nu) \propto \nu^{-1}$ ($c/H_0 =1$)  para diferentes valores del parámero $\Omega_0$. 
+
+
+
+\item $\Omega_{\Lambda} \neq 0$:
+
+Así mismo, la figura 15 muestra la variación para modelos con valores finitos de $\Omega_{\Lambda}$ y geometría plana. 
+
+Elegir el índice espectral $\alpha = 1$  en (4.72) implica que también hay variaciones en la densidad de flujo bolométrico (ver ecs. 2.31 y 2.33). Para el caso de galaxias, debe incluirse el espectro detallado de las mismas, lo cual se resuelve con las Correcciones K, mostradas en las relaciones (2.37,38,39). 
+
+\end{itemize}
+
+\begin{figure}[H]
+        \begin{minipage}[b]{0.41\linewidth}
+        %\centering
+            \includegraphics[scale=0.40]{79a_Malcolmpp237.png}
+            \caption{\footnotesize{Modelos de mundo con $\Omega_{\Lambda}=0$.}}
+            %\label{fig:figura1}
+    \end{minipage}
+        \hspace{0.9cm}
+    \begin{minipage}[b]{0.36\linewidth}
+        %\centering
+            \includegraphics[scale=0.39]{79b_Malcolmpp237.png}
+            
+            \caption{\footnotesize{Modelos de mundo con $\Omega_{\Lambda} \neq 0$, incluyendo el caso de geometría plana $\Omega_{\Lambda} + \Omega_0 =1$. }}
+        %\label{fig:figura2}
+    \end{minipage}
+\end{figure}
+
+\vspace{0.4cm}
     
     
+{\bf{\large{Imágenes Fantasmas}}}
+
+Las {\textit{imágenes fantasmas}} son características en Modelos de Lema\^itre, los cuales presentan un $\dot{a} > 0$ además de secciones esféricas cerradas.
+
+En el caso de modelos de mundo de Eddington – Lema\^itre, también con secciones esféricas, $\kappa >0$, la expansión casi se detiene a un desplazamiento al rojo crítico $z_c$, por esta razón hay tiempo para que las ondas electromagnéticas se propaguen desde la fuente hasta el observador un número de veces alrededor de la geometría cerrada del Universo. El objeto puede ser observado en direcciones opuestas o en la misma dirección en el cielo pero multiplicado, lo cual produce que sea observado en diferentes desplzamiento al rojo y por ende en distintos tiempos en su historia de vida.
     
+    \begin{wrapfigure}[21]{r}{0.5\linewidth}                  \includegraphics[width=0.65\textwidth]{710_Malcolmpp238.png}
+        \caption{\footnotesize{$r/R'$ como una función del desplazamiento al rojo ($z$) para modelos de Eddington - Lema\^itre estacionarios en $z_c = 3$.}}
+    \end{wrapfigure}
+
+    De la sección de {\textit{dinámica de modelos de mundo con $\Omega_{\Lambda} \neq 0$}}, sec. 4.2, para estos modelos de  Eddington – Lema\^itre, el parámetro de densidad puede hallarse de la relación (4.46), siendo de $\Omega_0 = 1/27$ y el valor de $\Omega_{\Lambda}$ se obtiene de la relación (4.45,46), $\Omega_{\Lambda} = 32/27$. De esta manera, el radio de curvatura de la geometría cerrada viene siendo $R’ = (27/6)^{1/2} (c/H_0)$. Tomando estos valores e insertándolos en (4.64), una relación para $r/R’$ a un cierto $z$ es obtenida. Así, la figura 16 muestra esto para valores de $r/R’ = \pi, 2 \pi, 3 \pi, 4 \pi$. $r/R’ \rightarrow{\infty}$ a medida el desplazamiento al rojo estacionario vaya acercándose al valor $z_c=3$. 
     
+    \newpage
     
+    De la sección de {\textit{diámetros angulares}}, 2.3, la distancia medida se definió como:
+
+\begin{equation}
+	D = R’ \sin(r/R’),
+\end{equation}
     
+    así, considerando un índice espectral $\alpha = 1$, definido por $S \propto \nu^{-2}$ es
+
+\begin{equation}
+	S \propto	\frac{1}{[R’ \sin(r/R’)]^2 (1+z)^2}.
+\end{equation}
+     
+     De esta relación, el mínimo en la densidad de flujo -  desplazamiento al rojo ocurre en $r/R’= \pi/2$ y diverge en $\pi$ con $z= 2.825$. Así mismo, para valores de $\pi < r/R’ < 2 \pi \rightarrow{z = 2.9929}, \, \, 2 \pi < r/R’ < 3 \pi \rightarrow{z = 2.99967}$. Que exista una divergencia, e.g., en $r/R’ = \pi$ se debe a que estamos observando el punto {\textit{antipodal}} {\footnote{el punto antipodal en la superficie esférica es el punto diametralmente opuesto a este. En un círculo están separados $180^{\circ}$. }} en la geometría cerrada para nuestra propia ubicación en el Universo.
     
+   Esa luz se podría pensar  la de una galaxia en el punto antipodal que se enfoca y recibiríamos en nuestra Galaxia en $z=0$ y que para $r/R’ = 2  \pi$ observamos pero en $z=2.9923$, y así hasta que $z \rightarrow{z_c}$.  
+
+Recordemos que los modelos de Lema\^itre no alcanzan un estado estacionario sino que $\dot{a} > 0$. Estos modelos tienen que ser finamente ajustado para que imágenes fantasmas puedan ser observadas. 
+
     
+    Para modelos de Friendmann con $\Omega_{\Lambda} =0$ el efecto de imágenes fantasmas no ocurre; en todos los que tienen geometría espacial cerrada $r/R’ \rightarrow{\pi/2}$ como $z \rightarrow{\infty}$, en donde $\pi/2$ corresponde a rayos de luz que se propagan desde una densidad de flujo mínimo a la Tierra, entonces la posibilidad de observar la misma fuente en direcciones opuestas o múltiples imágenes del mismo objeto y en la misma dirección no existe. 
     
-    
-    
-    
-    
+    El interés de considerar este fenómeno es que si tales imágenes `fantasmas’ existiesen, implicaría que el Universo en algún tiempo pasado experimentó una larga fase cuasi-estacionaria. Esto se ha tratado de verificar usando catálogos de fuentes de radio extragalácticas, pero no ha dado resultados positivos. 
+
+
+
+\subsubsection{Volumen Comóvil dentro del Desplazamiento al Rojo $z$}
     
     
     
