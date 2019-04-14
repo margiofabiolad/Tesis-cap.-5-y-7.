@@ -842,7 +842,7 @@ Podemos suponer que la fuente emite $N(\nu_1)$ fotones con energía $h \nu_1$, e
        \varrho_c = \frac{3H_O^2}{8\pi G} = 1.88 \times 10^{-26} \mathrm{h^2 kg m^{-3}},
    \end{equation}
     
-    siendo la constante de Hubble $H_0$ con un valor de $100 \, \mathrm{h \, km\, s^{-1} Mpc^{-1}}$. En la época presente, la densidad del modelo $\varrho_0$ puede referirse al valor de la densidad crítica a través de lo que se conoce como {\textit{parámetro de densidad} $\Omega_0 = \varrho_0/\varrho_c$, donde este parámetro ha sido definido como
+    siendo la constante de Hubble $H_0$ con un valor de $100 \, \mathrm{h \, km\, s^{-1} Mpc^{-1}}$ {\footnote{${\mathrm{h}}= H_0/(100 \, km \, s^{-1}\, Mpc^{-1})$}. En la época presente, la densidad del modelo $\varrho_0$ puede referirse al valor de la densidad crítica a través de lo que se conoce como {\textit{parámetro de densidad} $\Omega_0 = \varrho_0/\varrho_c$, donde este parámetro ha sido definido como
     
      \begin{equation}
          \Omega_0 = \frac{\varrho_0}{\varrho_c} = \frac{8 \pi G \varrho_0}{3 H_0^2}.
@@ -1630,13 +1630,145 @@ Recordemos que los modelos de Lema\^itre no alcanzan un estado estacionario sino
 \subsubsection{Volumen Comóvil dentro del Desplazamiento al Rojo $z$}
     
     
+    Recordando la relación obtenida en la sección 2.5, {\textit{densidades numéricas}}, nosotros obtuvimos la relación (2.40) 
+
+\begin{equation}
+	dV=4\pi R’^2 \sin^2(r/R’) dr = 4\pi D^2 dr,
+\end{equation} 
     
     
+    de la cual, por integración, podemos obtener una expresión para el elemento de la coordenada de distancia radial comóvil y la distancia medida $D$. 
+
+\begin{itemize}
+
+\item Modelos con $\Omega_{\Lambda} =0$:
+
+Comenzando con estos modelos, podemos hacer tres consideraciones: cuando $\kappa >, \, =, \, < 1$. De la expresión (7.20):
+
+\begin{itemize}
+
+\item[-] $\Omega_0 > 1, \, R’ = (c/H_0) (\Omega_0 – 1)^{-1/2}$:
+
+\begin{equation}
+V(z) = 2 \pi R’^3 \left( \frac{r}{R’} - \frac{1}{2} \sin \frac{2r}{R’} \right) = 2 \pi R’^3 \left( \sin^{-1} \frac{D}{R’} - \frac{D}{R’} \sqrt{1 - \frac{D^2}{R’^2}} \right). 
+\end{equation}  
+
+\item[-] $\Omega_0 <  1, \, R’ = (c/H_0) ( 1 - \Omega_0 )^{-1/2}$:
+
+\begin{equation}
+V(z) = 2 \pi R’^3 \left(  \frac{1}{2} \sinh \frac{2r}{R’} - \frac{r}{R’} \right) = 2 \pi R’^3  
+\left( \frac{D}{R’} \sqrt{1 + \frac{D^2}{R’^2}} - \sinh^{-1} \frac{D}{R’}  \right). 
+\end{equation} 
+
+\item[-] Finalmente, para el modelo crítico (Einstein -  De Sitter), $\Omega_0 = 1, \, R’= \infty, \, r=D$:
+
+
+
+\begin{equation}
+V(z) = \frac{4 \pi}{3} r^3 . 
+\end{equation}  
+
+
+\end{itemize} 
+   
+   \end{itemize} 
+    
+    En las figuras 17 y 18 se observan ejemplos del volumen comóvil dentro del $z$ para diferentes valores de $\Omega_0$. En el caso de 7.11a se ilustra la convergencia del volumen encerrado en un $z > 1$: a pequeños desplazamientos al rojo, el elemento de volumen incrementa como $z^2 dz$; a valores altos $\Omega_ 0 z > 1, \, z >1$ el volumen decrece con el incremento de $z^{-3/2} dz$. Esto quiero decir que a hay más pocas fuentes a medida que $z$ incrementa. 
     
     
+    \begin{figure}[H]
+        \begin{minipage}[b]{0.43\linewidth}
+        %\centering
+            \includegraphics[scale=0.37]{fig711a_Malcolm_pp240.png}
+            \caption{\footnotesize{Modelos de mundo con $\Omega_{\Lambda}=0$.}}
+            %\label{fig:figura1}
+    \end{minipage}
+        \hspace{0.9cm}
+    \begin{minipage}[b]{0.36\linewidth}
+        %\centering
+            \includegraphics[scale=0.37]{fig711b_Malcolm_pp240.png}
+            
+            \caption{\footnotesize{Modelos de mundo con $\Omega_{\Lambda} \neq 0$, incluyendo el caso de geometría plana $\Omega_{\Lambda} + \Omega_0 =1$. }}
+        %\label{fig:figura2}
+    \end{minipage}
+\end{figure}
     
     
+    \subsection{Problema de la Llanura (o {\textit{Flatness}})}
     
+    Dos parámetros en el tiempo presente fueron ya estudiados de las secciones (2.3) y (4.1). 
+
+\begin{itemize}
+
+	\item De la primera, la constante de Hubble $H_0$ fue introducida y se recalcó el hecho, que esta depende de la época cósmica. En general, de (2.17)  se había encontrado que
+
+\begin{equation}
+H(t) = \frac{\dot{a}}{a}.
+\end{equation} 
+
+También, en (4.50) se obtuvo la relación que existe entre la constante de Hubble y el desplazamiento al rojo, donde se ha usado uno de los resultados más importantes en cosmología, la relación (2.11): $a = (1 + 1)^{-1}$. Así
+
+\begin{equation}
+H(z) = \frac{\dot{a}}{a} = H_0 [(1+z)^2 (\Omega_0 z +1) - \Omega_{\Lambda}z(z+2)]^{1/2}.
+\end{equation} 
+
+\item Así mismo, de la sección (4.1) se encontró la relación para el parámetro de densidad en la época presente, (4.4)
+
+\begin{equation}
+\Omega_0 = \frac{\varrho_0}{\varrho_c} = \frac{8 \pi G \varrho_0}{3 H_0^2}.
+\end{equation}
+
+Análogamente, para cualquier época
+
+    \begin{equation}
+        \Omega = \frac{\varrho}{\varrho_c} = \frac{8 \pi G \varrho}{3 H^2}.
+    \end{equation}
+
+    Considerando `polvo’, i.e., un fluido sin presión ($p=0$),  $\varrho = \varrho_0 a^{-3} = \varrho_0(1+z)^3 $ y sustituyendo en esta última relación
+
+    \begin{align}
+        \Omega & = \frac{8 \pi G }{3 H^2}  \varrho_0(1+z)^3, \\
+        & = \frac{\Omega_0}{\left[ \frac{\Omega_0 z+1}{1+z} \right]  - {\Omega_{\Lambda} \left[ \frac{1}{(1+z)} - \frac{1}{(1+z)^3} \right]}}.  
+    \end{align}
+
+    Considerando grandes desplazamientos al rojo $z >> 1$, $\Omega_0 z >> 1$, y analizando el denominador de la última expresión, para el primer término domina $\Omega_0$, mientras que el segundo tiende a cero, obteniéndose entonces que el parámetro de densidad en cualquier época y para $z$ grandes  $\Omega \rightarrow{1}$ sin importar el valor que tenga en la época actual. Significa que, a alto desplazamiento al rojo, la dinámica de $\Omega_{\Lambda}$ no es importante. Hay marcadas diferencias entre la dependencia que puede existir en las densidades de energía oscura y de materia sobre $z$. Siguiendo entonces podemos en (4.84) hacer $\Omega_{\Lambda} = 0$. Por lo tanto
+    
+    
+    \begin{equation}
+        \left( 1 - \frac{1}{\Omega} \right) = (1+z)^{-1} \left( 1 - \frac{1}{\Omega_0} \right).
+    \end{equation} 
+
+    Si, regresamos a la sección (4.2), {\textit{dinámica de los modelos de Friedmann con $\Lambda = 0$}}, y reescribimos las soluciones a (4.9), i.e., (4.12,13,14,15) para $\theta << 1$ y $\phi <<1$, nos queda
+    
+    \begin{equation}
+        a = \Omega_0^{1/3} \left( \frac{3 H_0 t}{2} \right)^{2/3},
+    \end{equation}
+    
+   \end{itemize} 
+    
+    se reafirma la conclusión expuesta al final de la sección; {\bf{la dinámica de todos los modelos de mundo, con $\Omega_{\Lambda} =0$, tienden a esos del modelo crítico en sus escenarios tempranos}}. Además de esto, es importante destacar que el $\Omega_0$ tiene un valor cercano a $1$ en el Universo actual. Si su valor fuera diferente de $1$ en el pasado lejano, también lo fuera en el presente, como se puede apreciar en (4.85). Así, mantengamos la idea que, en el modelo cosmológico considerado, $\Omega_0$ es simplemente un parámetro que debe ser fijado como parte de las condiciones iniciales de nuestro Universo. 
+    
+    Hemos definido el parámetro de densidad como la relación de la densidad de materia – energía del Universo $\varrho_0$ a la densidad crítica $3H_0^2/8 \pi G$. La evidencia observacional sugiere un valor de $\Omega_0 \propto 0.3$ que a su vez afirma que la curvatura del espacio $\kappa \rightarrow{0}$, valor que ha sido respaldado por la misión Wikelson Map (WMAP). Esto viene siendo el origen de lo que se conoce como el {\textit{Problema de la Llanura (flatness)}}, i.e., el parámetro debe haber sido $\Omega = 1$ en el pasado distante si su valor en el presente es cercano a $\Omega_0$. Esto se convierte en una importante evidencia empírica a favor de lo que se conoce como la era {\textit{Inflacionaria}} en el Universo temprano extremo. 
+
+\large{\textbf{Era Inflacionaria}}
+
+
+Esta es una descripción más cualitativa de lo que fue la {\textit{inflación}}. Actualmente, se cree que la evolución del Universo en sus primeras etapas consistió de transiciones hacia estados de menor simetría, partiendo de un estado de máxima simetría. Las cuatro fuerzas fundamentales de la naturaleza estaban unificadas y en el primer rompimiento de simetrías, fueron separadas en dos fuerzas: la fuerza gravitatoria y la fuerza {\textit{hiper débil}}, de igual intensidad en un principio. Poca o nada de distinción existe entre la materia y la antimateria, entre quarks y leptones. 
+
+En el primer segundo, se estima que el Universo tuvo una densidad de $10^6 g \, cm^{-3}$ y la temperatura de $10^{10} \, K$. En lo que se conoce como la {\textit{época de Planck}}, $10^{-44} s$, la densidad cósmica era del orden de $10^{94} g \, cm^{-3}$ y la temperatura del orden de los $10^{32} \, K$ (equivalente a una energía de partículas de $10^{19} \, GeV$) {\footnote{$1 \,GeV$ es un billón de electrón voltios, igual a la energía térmica de una partícula a $10000 \,K$}}. Además, el espacio -  tiempo consistía de una `espuma' densa de fluctuaciones cuánticas reales en escalas de longitud de $10^{-33} \, cm$ y escalas de tiempo de $10^{-43} \, s$. Este Universo temprano extremo fue muy corto; debido a la expansión, la temperatura cayó del valor de Planck y a los $10^{-36} \, s$ alcanzó un valor crítico de $10^{28} \, K$ (equivalente a $15 \, GeV$). A continuación, vino el segundo rompimiento de simetrías de la gran unificación: la fuerza hiper débil a su vez se dividió en la fuerza electro-débil y la fuerza fuerte de la era quark-lepton. Es con esta última transición que inicia la era de la inflación cósmica, además que establece las diferencias entre materia y antimateria, entre quarks y leptones.
+
+Sydney Coleman propuso la idea de una transición de fase de un estado dominado por la fuerza hiper débil a un estado de menor energía compuesto de leptones y quarks dominados por la fuerza electro débil y la fuerza fuerte (Coleman, S., \& De Luccia, F., 1980) (Coleman, S., \& De Luccia, F. (1980). Gravitational effects on and of vacuum decay. Physical Review D, 21(12), 3305–3315. doi:10.1103/physrevd.21.3305 )
+Esta fase puede ser pensada como la transición del agua a hielo cuando la temperatura cae. Ocurre en el punto de congelación $273 \, K$ ($0^{\circ}C$). Al caer la temperatura, el agua pura no perturbada se enfría a una temperatura menor que la del punto de congelación antes de transformarse en hielo. Similarmente, en el caso del Universo temprano, la temperatura cayó, la transición a quarks y leptones no ocurre en el instante en que la temperatura alcanza un valor crítico de $10^{28} \,K$. La transformación abrupta en una mezcla de quarks – leptones que se ha súper enfriado fue lo que Coleman denominó {\textit{vacío falso}}; el más bajo estado posible de energía disponible para la fuerza hiper débil. Cuando la transición finalmente  ocurre espontánamente, el vacío falso libera su inmensa energía latente, devolviendo la temperatura casi a su valor inicial de la gran unificación y formando quarks, leptones y gluones (bosones mediadores de la fuerza fuerte). 
+
+En 1980, Alan Guth, quien elaboró la primera teoría del Universo inflacionario en 1970, mientras estudiaba el conocido {\textit{problema del monopolo}} consideró también el vacío falso. Pensaba que este vacío falso existió en un estado extraordinario de presión negativa que causó la expansión del Universo acelerada. Guth argumentaba que la expansión acelerada, lo cual denominó inflación, resolvía el problema del monopolo, de la llanura y del horizonte. Así, cualquier Universo que experimentó en su infancia un período de expansión acelerada es ahora conocido como un {\textit{universo inflacionario}}.
+
+En el caso de monopolos, las ecuaciones de Maxwell reflejan una asimetría en la naturaleza: hallamos carga eléctrica libre pero no polos. El movimiento de electrones constituye la corriente eléctrica que genera a su vez campos magnéticos. Pero en el caso del magnetismo, solo existen pares de polos, o dipolos, constituidos por un polo norte y un polo sur, y nunca están libres en la naturaleza en la forma de partículas magnéticas. La existencia de monopoles implicaría que sus movimientos generarían una corriente magnética que a su vez produciría campos eléctricos. Análogamente, como en el caso de las partículas cargadas, los monopoles norte (positivo) y sur (negativo) se atraerían. Nada en la naturzaleza prohibe la existencia de monopolos, pero tampoco han podido ser detectados. 
+
+Teorías de unificación estiman que los monopolos existieron en abundancia en el Universo temprano. Fueron formados a muy alta energía ($10^{15} \, GeV$ o incluso mayor) y una masa de al menos $10^{-9} \, g$. El norte y sur forman la partícula y antipartícula de los monopolos y se supone la aniquilación entre ellos tal como todos los pares partícula-antipartícula. Además, son estables y no decaen en otras partículas de menor masa. A causa de su pequeña sección transversal ($10^{-29} \, cm$) y a la violenta expansión del Universo, la aniquilación no logra acabar significativamente con la población de los monopolos. Los monopolos deberían existir todavía y ser tan abundantes como los fotones en la radiación del fondo cósmico.
+
+La teoría de la gran unificación (GUT) recupera la simetría perdida del electromagnetismo en el Universo temprano extremo, pero también hace sobresalir la pregunta de por qué los monopolos están ausentes del mundo que nos rodea. 
+
+
     
     
 \end{document}
